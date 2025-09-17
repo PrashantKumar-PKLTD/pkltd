@@ -11,6 +11,7 @@ import { Card, CardContent } from "../../../components/ui/card";
 import { QuoteButton } from "../../../components/ui/quote-button";
 import { ScrollIndicator } from "../../../components/ui/scroll-indicator";
 import { Separator } from "../../../components/ui/separator";
+import { SmoothScrollWrapper } from "../../../components/ui/smooth-scroll-wrapper";
 import LogoSection from "./LogoSection";
 
 const servicesData = [
@@ -179,8 +180,8 @@ export const DigitalMainContentSection = (): JSX.Element => {
                     <QuoteButton variant="primary" size="default">
                       Start Digital Project
                     </QuoteButton>
-              </div>
-            </div>
+                  </div>
+                </SmoothScrollWrapper>
 
             <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative">
                 <div className="flex flex-col items-start gap-2 w-full z-10">

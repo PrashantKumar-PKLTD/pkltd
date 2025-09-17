@@ -10,6 +10,7 @@ import { Button } from "../../../components/ui/button";
 import { Card, CardContent } from "../../../components/ui/card";
 import { QuoteButton } from "../../../components/ui/quote-button";
 import { Separator } from "../../../components/ui/separator";
+import { SmoothScrollWrapper } from "../../../components/ui/smooth-scroll-wrapper";
 import LogoSection from "./LogoSection";
 
 const servicesData = [
