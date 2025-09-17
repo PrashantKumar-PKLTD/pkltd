@@ -14,16 +14,14 @@
       "label": "DigitalPage",
       "routes": [
         "/services/digital"
-      ],
-      "dataModelId": "42:33829"
+      ]
     },
     {
       "id": "src/screens/Content/services/TechPage.tsx",
       "label": "TechPage",
       "routes": [
         "/services/tech"
-      ],
-      "dataModelId": "42:33829"
+      ]
     },
     {
       "id": "src/screens/Content/services/DataPage.tsx",
@@ -38,40 +36,35 @@
       "label": "CreativesPage",
       "routes": [
         "/services/creatives"
-      ],
-      "dataModelId": "42:33829"
+      ]
     },
     {
       "id": "src/screens/Content/services/AIPage.tsx",
       "label": "AIPage",
       "routes": [
         "/services/ai"
-      ],
-      "dataModelId": "42:33829"
+      ]
     },
     {
       "id": "src/screens/Content/services/AgilePage.tsx",
       "label": "AgilePage",
       "routes": [
         "/services/agile"
-      ],
-      "dataModelId": "42:33829"
+      ]
     },
     {
       "id": "src/screens/Content/services/SustainabilityPage.tsx",
       "label": "SustainabilityPage",
       "routes": [
         "/services/sustainability"
-      ],
-      "dataModelId": "42:33829"
+      ]
     },
     {
       "id": "src/screens/Content/services/LegalPage.tsx",
       "label": "LegalPage",
       "routes": [
         "/services/legal"
-      ],
-      "dataModelId": "42:33829"
+      ]
     }
   ],
   "edges": [
