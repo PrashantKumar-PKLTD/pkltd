@@ -9,7 +9,9 @@ import {
 import { Button } from "../../../components/ui/button";
 import { Card, CardContent } from "../../../components/ui/card";
 import { QuoteButton } from "../../../components/ui/quote-button";
+import { ScrollIndicator } from "../../../components/ui/scroll-indicator";
 import { Separator } from "../../../components/ui/separator";
+import { SmoothScrollWrapper } from "../../../components/ui/smooth-scroll-wrapper";
 import LogoSection from "./LogoSection"
 
 
@@ -158,10 +160,11 @@ export const MainContentSection = (): JSX.Element => {
   return (
     <div className="flex flex-col items-center w-full">
       {/* Hero Section */}
-      <section className="flex flex-col w-full items-center justify-center min-h-[660px] relative">
+      <section id="hero-section" className="flex flex-col w-full items-center justify-center min-h-[660px] relative">
   <div className="w-full max-w-[1312px] mx-auto px-4">
     <div className="flex items-center justify-center gap-8 min-h-[480px]">
-      <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-8 pb-0 px-0 translate-y-[-1rem] animate-fade-in opacity-0">
+      <SmoothScrollWrapper animationType="slide" delay={0}>
+        <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-8 pb-0 px-0">
         <div className="gap-2 flex flex-col items-start w-full">
           <div className="mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#151517] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] w-fit [font-style:var(--title-h6-font-style)]">
             Proud of the insights <br />
@@ -173,7 +176,8 @@ export const MainContentSection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="flex items-center gap-4 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+        <SmoothScrollWrapper animationType="fade" delay={200}>
+          <div className="flex items-center gap-4">
           <Button
             variant="ghost"
             className="h-auto inline-flex items-center justify-center gap-2 rounded-lg p-0 hover:scale-105 transition-transform duration-200"
@@ -188,9 +192,12 @@ export const MainContentSection = (): JSX.Element => {
             Start Your Project
           </QuoteButton>
         </div>
+        </SmoothScrollWrapper>
       </div>
+      </SmoothScrollWrapper>
 
-      <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+      <SmoothScrollWrapper animationType="fade" delay={400}>
+        <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative">
         <div className="flex flex-col items-start gap-2 w-full z-10">
           <div className="w-fit mt-[-1.00px] font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
             Featured project:
@@ -207,16 +214,19 @@ export const MainContentSection = (): JSX.Element => {
           src="https://c.animaapp.com/mfo404djpVGKfZ/img/technology.png"
         />
       </div>
+      </SmoothScrollWrapper>
     </div>
   </div>
+  <ScrollIndicator targetId="services-section" />
 </section>
 
 
       {/* Services Section */}
-      <section className="flex flex-col items-center justify-center px-0 py-24 w-full bg-[#88888914]">
+      <section id="services-section" className="flex flex-col items-center justify-center px-0 py-24 w-full bg-[#88888914]">
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-start gap-8 w-full">
-            <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
+            <SmoothScrollWrapper animationType="slide" delay={0}>
+              <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
               <div className="gap-3 flex flex-col items-start w-full">
                 <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                   SERVICES
@@ -230,15 +240,18 @@ export const MainContentSection = (): JSX.Element => {
                 </div>
               </div>
             </div>
+            </SmoothScrollWrapper>
 
             <div className="w-20" />
 
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(0, 2).map((service, index) => (
-                <div
+                <SmoothScrollWrapper
                   key={index}
-                  className={`flex flex-col items-start gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${800 + index * 200}ms]`}
+                  animationType="fade"
+                  delay={200 + index * 100}
                 >
+                  <div className="flex flex-col items-start gap-4 w-full">
                   <div className="gap-3 flex flex-col items-start w-full">
                     <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                       {service.category}
@@ -255,15 +268,18 @@ export const MainContentSection = (): JSX.Element => {
                     {service.description}
                   </div>
                 </div>
+                </SmoothScrollWrapper>
               ))}
             </div>
 
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(2, 4).map((service, index) => (
-                <div
+                <SmoothScrollWrapper
                   key={index + 2}
-                  className={`flex flex-col items-start gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${1200 + index * 200}ms]`}
+                  animationType="fade"
+                  delay={400 + index * 100}
                 >
+                  <div className="flex flex-col items-start gap-4 w-full">
                   <div className="gap-3 flex flex-col items-start w-full">
                     <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                       {service.category}
@@ -280,23 +296,27 @@ export const MainContentSection = (): JSX.Element => {
                     {service.description}
                   </div>
                 </div>
+                </SmoothScrollWrapper>
               ))}
             </div>
           </div>
         </div>
+        <ScrollIndicator targetId="capabilities-section" />
       </section>
 
       {/* Capabilities Grid Section */}
-      <section className="flex flex-col min-h-[1120px] items-center justify-center w-full relative">
+      <section id="capabilities-section" className="flex flex-col min-h-[1120px] items-center justify-center w-full relative">
         <div className="w-full h-[1120px] bg-[#fef29366] absolute inset-0" />
 
         <div className="w-full max-w-[1327px] mx-auto px-4 relative z-10">
           <div className="grid grid-cols-3 gap-8 w-full">
             {capabilitiesData.map((capability, index) => (
-              <Card
+              <SmoothScrollWrapper
                 key={index}
-                className={`group w-full h-[187px] bg-[#ffffff] rounded-[20px] border-0 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${1600 + index * 100}ms] hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer`}
+                animationType="scale"
+                delay={index * 100}
               >
+                <Card className="group w-full h-[187px] bg-[#ffffff] rounded-[20px] border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                 <CardContent className="flex flex-col items-start justify-between p-[18px] h-full">
                   <div className="w-16 h-[63px] bg-[#fef29366] rounded-[10px] flex items-center justify-center group-hover:bg-[#d90a2c] transition-colors duration-300">
                     <img
@@ -310,16 +330,19 @@ export const MainContentSection = (): JSX.Element => {
                   </div>
                 </CardContent>
               </Card>
+              </SmoothScrollWrapper>
             ))}
           </div>
         </div>
+        <ScrollIndicator targetId="video-section" />
       </section>
 
       {/* Video/FAQ Section */}
-      <section className="flex flex-col items-center justify-center pt-24 pb-0 px-0 w-full ">
+      <section id="video-section" className="flex flex-col items-center justify-center pt-24 pb-0 px-0 w-full">
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-start gap-8 w-full">
-            <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-0 pb-2 px-0">
+            <SmoothScrollWrapper animationType="slide" delay={0}>
+              <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-0 pb-2 px-0">
               <div className="gap-3 flex flex-col items-start w-full">
                 <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                   CAPABILITIES
@@ -332,6 +355,7 @@ export const MainContentSection = (): JSX.Element => {
                 </div>
               </div>
             </div>
+            </SmoothScrollWrapper>
 
             <div className="w-20" />
             <div className="w-full max-w-[632px]" />
@@ -340,15 +364,18 @@ export const MainContentSection = (): JSX.Element => {
 
         <div className="items-center w-full flex flex-col justify-center">
           <div className="flex items-center justify-center w-full">
-            <div className="flex flex-col w-full max-w-[936px] items-start justify-center gap-8 px-0 py-24">
+            <SmoothScrollWrapper animationType="fade" delay={200}>
+              <div className="flex flex-col w-full max-w-[936px] items-start justify-center gap-8 px-0 py-24">
               <img
                 className="flex-1 w-full object-cover"
                 alt="Stock photo portrait"
                 src="https://c.animaapp.com/mfo404djpVGKfZ/img/stock-photo-portrait-of-successful-group-of-people-working-at-on.png"
               />
             </div>
+            </SmoothScrollWrapper>
 
-            <div className="flex flex-col items-start gap-8 pl-24 pr-0 py-24 flex-1 bg-[#ffffff]">
+            <SmoothScrollWrapper animationType="fade" delay={400}>
+              <div className="flex flex-col items-start gap-8 pl-24 pr-0 py-24 flex-1 bg-[#ffffff]">
               <div className="flex items-center gap-4 mb-6">
                 <Button
                   variant="ghost"
@@ -422,22 +449,26 @@ export const MainContentSection = (): JSX.Element => {
                 </AccordionItem>
               </Accordion>
             </div>
+            </SmoothScrollWrapper>
 
             <div className="w-[184px] bg-[#ffffff]" />
           </div>
         </div>
+        <ScrollIndicator targetId="logo-section" />
       </section>
 
       {/* Screenshot Section */}
-      <section className="flex ">
+      <section id="logo-section" className="flex">
          <LogoSection/>
+         <ScrollIndicator targetId="process-section" />
       </section>
 
       {/* Process Steps Section */}
-      <section className="w-full">
+      <section id="process-section" className="w-full">
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-center justify-center gap-10 w-full">
-            <div className="flex flex-col items-start justify-center gap-8 flex-1 bg-[#ff5d3a1a]">
+            <SmoothScrollWrapper animationType="scale" delay={0}>
+              <div className="flex flex-col items-start justify-center gap-8 flex-1 bg-[#ff5d3a1a]">
               <div className="w-full h-[806px] bg-[#06ff00] overflow-hidden relative">
                 {processSteps.map((step, index) => (
                   <div
@@ -475,15 +506,18 @@ export const MainContentSection = (): JSX.Element => {
                 ))}
               </div>
             </div>
+            </SmoothScrollWrapper>
           </div>
         </div>
+        <ScrollIndicator targetId="awards-section" />
       </section>
 
       {/* Awards Section */}
-      <section className="flex flex-col items-center justify-center px-0 py-24 w-full">
+      <section id="awards-section" className="flex flex-col items-center justify-center px-0 py-24 w-full">
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-start gap-8 w-full">
-            <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
+            <SmoothScrollWrapper animationType="slide" delay={0}>
+              <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
               <div className="gap-3 flex flex-col items-start w-full">
                 <div
                   className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle
@@ -500,10 +534,12 @@ export const MainContentSection = (): JSX.Element => {
                 </div>
               </div>
             </div>
+            </SmoothScrollWrapper>
 
             <div className="w-20" />
 
-            <div className="flex flex-col items-start justify-center gap-8 flex-1">
+            <SmoothScrollWrapper animationType="fade" delay={200}>
+              <div className="flex flex-col items-start justify-center gap-8 flex-1">
               <div className="w-[542px] mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#151517] text-[17.2px] tracking-[-0.34px] leading-[27.5px]">
                 <span className="tracking-[-0.06px]">
                   Recognized for delivering innovative{" "}
@@ -568,15 +604,18 @@ export const MainContentSection = (): JSX.Element => {
                 ))}
               </div>
             </div>
+            </SmoothScrollWrapper>
           </div>
         </div>
+        <ScrollIndicator targetId="features-section" />
       </section>
 
       {/* Service Features Section Header */}
-      <div className="flex w-full max-w-[1312px] mx-auto px-4 items-start gap-8 relative">
+      <section id="features-section" className="flex w-full max-w-[1312px] mx-auto px-4 items-start gap-8 relative py-12">
         <div className="w-20" />
         <div className="w-full max-w-[632px]" />
-        <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-0 pb-2 px-0">
+        <SmoothScrollWrapper animationType="slide" delay={0}>
+          <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-0 pb-2 px-0">
           <div className="gap-3 flex flex-col items-start w-full">
             <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
               SERVICE FEATURES
@@ -589,13 +628,16 @@ export const MainContentSection = (): JSX.Element => {
             </div>
           </div>
         </div>
-      </div>
+        </SmoothScrollWrapper>
+        <ScrollIndicator targetId="cta-section" />
+      </section>
 
       {/* CTA Section */}
-      <section className="flex flex-col w-full items-center justify-center px-0 py-24 bg-[#101014]">
+      <section id="cta-section" className="flex flex-col w-full items-center justify-center px-0 py-24 bg-[#101014]">
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-start justify-center gap-8 w-full">
-            <div className="flex flex-col items-start justify-center gap-8 flex-1">
+            <SmoothScrollWrapper animationType="slide" delay={0}>
+              <div className="flex flex-col items-start justify-center gap-8 flex-1">
               <div className="gap-2 flex flex-col items-start w-full">
                 <div className="mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#888889] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap w-fit [font-style:var(--title-subtitle-font-style)]">
                   COLLABORATION
@@ -608,8 +650,10 @@ export const MainContentSection = (): JSX.Element => {
                 </div>
               </div>
             </div>
+            </SmoothScrollWrapper>
 
-            <div className="flex flex-col items-end gap-8 pt-[42px] pb-0 px-0 flex-1">
+            <SmoothScrollWrapper animationType="fade" delay={200}>
+              <div className="flex flex-col items-end gap-8 pt-[42px] pb-0 px-0 flex-1">
               <div className="flex items-center gap-4">
                 <QuoteButton variant="primary" size="lg">
                   Start Your Project
@@ -623,6 +667,7 @@ export const MainContentSection = (): JSX.Element => {
                 </Button>
               </div>
             </div>
+            </SmoothScrollWrapper>
           </div>
 
           <div className="flex items-center justify-center gap-8 px-0 py-7 w-full">
@@ -630,13 +675,15 @@ export const MainContentSection = (): JSX.Element => {
           </div>
 
           <div className="flex items-center justify-center gap-8 w-full">
-            <div className="flex flex-col items-start justify-center gap-8 flex-1">
+            <SmoothScrollWrapper animationType="fade" delay={400}>
+              <div className="flex flex-col items-start justify-center gap-8 flex-1">
               <div className="w-full mt-[-1.00px] font-body-large font-[number:var(--body-large-font-weight)] text-[#ffffffbf] text-[length:var(--body-large-font-size)] tracking-[var(--body-large-letter-spacing)] leading-[var(--body-large-line-height)] [font-style:var(--body-large-font-style)]">
                 We&apos;re a team of creatives who are excited about unique
                 ideas and help fin-tech companies create amazing identities by
                 crafting superior UI/UX.
               </div>
             </div>
+            </SmoothScrollWrapper>
 
             <div className="flex-1 h-[50px]" />
           </div>

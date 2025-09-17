@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../../../components/ui/button";
 import { Input } from "../../../components/ui/input";
+import { SmoothScrollWrapper } from "../../../components/ui/smooth-scroll-wrapper";
 
 const officeLocations = [
   {
@@ -37,11 +38,12 @@ const footerLinks = [
 
 export const ContactFooterSection = (): JSX.Element => {
   return (
-    <footer className="w-full bg-[#151517] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
+    <footer id="contact-footer" className="w-full bg-[#151517]">
       <div className="max-w-[1312px] mx-auto px-4 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Logo and Social Links Column */}
-          <div className="flex flex-col gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+          <SmoothScrollWrapper animationType="slide" delay={0}>
+            <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-6">
               <div className="relative w-[79px] h-10">
                 <img
@@ -63,13 +65,16 @@ export const ContactFooterSection = (): JSX.Element => {
               </div>
             </div>
           </div>
+          </SmoothScrollWrapper>
 
           {/* Office Locations */}
           {officeLocations.map((location, index) => (
-            <div
+            <SmoothScrollWrapper
               key={location.city}
-              className={`flex flex-col gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${400 + index * 200}ms]`}
+              animationType="fade"
+              delay={200 + index * 100}
             >
+              <div className="flex flex-col gap-8">
               <div className="flex flex-col gap-6">
                 <div className="font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#ffffff] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] [font-style:var(--title-h6-font-style)]">
                   {location.city}
@@ -85,10 +90,12 @@ export const ContactFooterSection = (): JSX.Element => {
                 </div>
               </div>
             </div>
+            </SmoothScrollWrapper>
           ))}
 
           {/* Newsletter Signup Column */}
-          <div className="flex flex-col gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
+          <SmoothScrollWrapper animationType="scale" delay={400}>
+            <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-6">
               <div className="font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#ffffffbf] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] [font-style:var(--title-h6-font-style)]">
                 Sign up for the newsletter
@@ -121,15 +128,18 @@ export const ContactFooterSection = (): JSX.Element => {
               </div>
             </div>
           </div>
+          </SmoothScrollWrapper>
         </div>
 
         {/* Contact Sections - Work Inquiries and Career */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 lg:mt-0 lg:col-span-2">
           {contactSections.map((section, index) => (
-            <div
+            <SmoothScrollWrapper
               key={section.title}
-              className={`flex flex-col gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${600 + index * 200}ms]`}
+              animationType="fade"
+              delay={600 + index * 100}
             >
+              <div className="flex flex-col gap-8">
               <div className="flex flex-col gap-6">
                 <div
                   className={`font-title-h6 font-[number:var(--title-h6-font-weight)] ${section.title === "Work inquiries" ? "text-[#ffffffbf]" : "text-[#ffffff]"} text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] [font-style:var(--title-h6-font-style)]`}
@@ -147,6 +157,7 @@ export const ContactFooterSection = (): JSX.Element => {
                 </div>
               </div>
             </div>
+            </SmoothScrollWrapper>
           ))}
         </div>
       </div>
@@ -155,7 +166,8 @@ export const ContactFooterSection = (): JSX.Element => {
       <div className="max-w-[1312px] mx-auto px-4">
         <div className="w-full h-px bg-[#90919c29]" />
 
-        <div className="flex flex-col md:flex-row items-start justify-between gap-8 py-[30px] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1000ms]">
+        <SmoothScrollWrapper animationType="fade" delay={800}>
+          <div className="flex flex-col md:flex-row items-start justify-between gap-8 py-[30px]">
           <div className="flex items-center gap-1">
             <div className="font-body-xsmall font-[number:var(--body-xsmall-font-weight)] text-[#ffffffbf] text-[length:var(--body-xsmall-font-size)] tracking-[var(--body-xsmall-letter-spacing)] leading-[var(--body-xsmall-line-height)] [font-style:var(--body-xsmall-font-style)]">
               © 2019-2025 Colabrio. All rights reserved.
@@ -177,6 +189,7 @@ export const ContactFooterSection = (): JSX.Element => {
             ))}
           </div>
         </div>
+        </SmoothScrollWrapper>
       </div>
     </footer>
   );

@@ -6,7 +6,9 @@ import {
   AccordionTrigger,
 } from "../../../components/ui/accordion";
 import { QuoteButton } from "../../../components/ui/quote-button";
+import { ScrollIndicator } from "../../../components/ui/scroll-indicator";
 import { Separator } from "../../../components/ui/separator";
+import { SmoothScrollWrapper } from "../../../components/ui/smooth-scroll-wrapper";
 
 const faqData = [
   {
@@ -55,10 +57,11 @@ const faqData = [
 
 export const ProjectCallToActionSection = (): JSX.Element => {
   return (
-    <section className="w-full py-16 px-4">
+    <section id="faq-section" className="w-full py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
+          <SmoothScrollWrapper animationType="slide" delay={0}>
+            <div>
             <h2 className="bg-gradient-to-b from-black to-gray-600 bg-clip-text text-transparent [font-family:'Inter',Helvetica] font-bold text-5xl lg:text-6xl tracking-[0] leading-normal mb-8">
               Creative Services <br />
               FAQs
@@ -74,8 +77,10 @@ export const ProjectCallToActionSection = (): JSX.Element => {
               </QuoteButton>
             </div>
           </div>
+          </SmoothScrollWrapper>
 
-          <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+          <SmoothScrollWrapper animationType="fade" delay={200}>
+            <div>
             <Accordion type="single" collapsible className="w-full space-y-6">
               {faqData.map((faq, index) => (
                 <AccordionItem
@@ -115,8 +120,10 @@ export const ProjectCallToActionSection = (): JSX.Element => {
               ))}
             </Accordion>
           </div>
+          </SmoothScrollWrapper>
         </div>
       </div>
+      <ScrollIndicator targetId="contact-footer" />
     </section>
   );
 };

@@ -39,16 +39,16 @@ export const Home = (): JSX.Element => {
 
       {/* Main content sections with entrance animations */}
       <div className="relative z-10">
-        <section className="w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
+        <section className="w-full">
           <SustainabilityHero />
           <SustainabilityMainContentSection />
         </section>
 
-        <section className="w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+        <section className="w-full">
           <ProjectCallToActionSection />
         </section>
 
-        <section className="w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+        <section className="w-full">
           <ContactFooterSection />
         </section>
       </div>
