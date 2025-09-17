@@ -1,0 +1,104 @@
+{
+  "nodes": [
+    {
+      "id": "src/screens/Content/Content.tsx",
+      "label": "Content",
+      "routes": [
+        "/"
+      ],
+      "dataModelId": "4019:47478",
+      "isRoot": true
+    },
+    {
+      "id": "src/screens/Content/services/DigitalPage.tsx",
+      "label": "DigitalPage",
+      "routes": [
+        "/services/digital"
+      ]
+    },
+    {
+      "id": "src/screens/Content/services/TechPage.tsx",
+      "label": "TechPage",
+      "routes": [
+        "/services/tech"
+      ]
+    },
+    {
+      "id": "src/screens/Content/services/DataPage.tsx",
+      "label": "DataPage",
+      "routes": [
+        "/services/data"
+      ],
+      "dataModelId": "42:33829"
+    },
+    {
+      "id": "src/screens/Content/services/CreativesPage.tsx",
+      "label": "CreativesPage",
+      "routes": [
+        "/services/creatives"
+      ]
+    },
+    {
+      "id": "src/screens/Content/services/AIPage.tsx",
+      "label": "AIPage",
+      "routes": [
+        "/services/ai"
+      ]
+    },
+    {
+      "id": "src/screens/Content/services/AgilePage.tsx",
+      "label": "AgilePage",
+      "routes": [
+        "/services/agile"
+      ]
+    },
+    {
+      "id": "src/screens/Content/services/SustainabilityPage.tsx",
+      "label": "SustainabilityPage",
+      "routes": [
+        "/services/sustainability"
+      ]
+    },
+    {
+      "id": "src/screens/Content/services/LegalPage.tsx",
+      "label": "LegalPage",
+      "routes": [
+        "/services/legal"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "src\\components\\Header.tsx:125:10-to-src\\screens\\Content\\Content.tsx",
+      "source": "src\\screens\\Content\\Content.tsx",
+      "target": "src\\screens\\Content\\Content.tsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<a href=\"/\" className=\"flex items-center min-w-0\">\r\n            <div>\r\n             <span className=\"font-extrabold \">PrashantKumarLTD</span>\r\n            </div>\r\n          </a>",
+          "line": 125,
+          "endLine": 129,
+          "column": 10,
+          "endColumn": 14,
+          "sourceFile": "src\\components\\Header.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\components\\Header.tsx:220:10-to-src\\screens\\Content\\Content.tsx",
+      "source": "src\\screens\\Content\\Content.tsx",
+      "target": "src\\screens\\Content\\Content.tsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<a href=\"/\" className=\"flex items-center min-w-0\">\r\n            <div className=\"w-[120px] h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-md flex items-center justify-center text-white font-bold\">\r\n              LOGO\r\n            </div>\r\n          </a>",
+          "line": 220,
+          "endLine": 224,
+          "column": 10,
+          "endColumn": 14,
+          "sourceFile": "src\\components\\Header.tsx"
+        }
+      }
+    }
+  ]
+}
