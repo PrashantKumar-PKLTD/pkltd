@@ -164,40 +164,40 @@ export const CreativesMainContentSection = (): JSX.Element => {
               </div>
 
               <div className="flex items-center gap-4 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-                <Button
-                  variant="ghost"
-                  className="h-auto inline-flex items-center justify-center gap-2 rounded-lg p-0 hover:scale-105 transition-transform duration-200"
-                >
-                  <div className="font-action-base font-[number:var(--action-base-font-weight)] text-[#151517] text-[length:var(--action-base-font-size)] tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] [font-style:var(--action-base-font-style)]">
-                    View Creative Work
-                  </div>
-                  <ArrowRightIcon className="w-6 h-6 transition-transform duration-200 group-hover:translate-x-1" />
-                </Button>
-                
-                <QuoteButton variant="primary" size="default">
-                  Start Creative Project
-                </QuoteButton>
+                <div className="flex items-center gap-4">
+                  <Button
+                    variant="ghost"
+                    className="h-auto inline-flex items-center justify-center gap-2 rounded-lg p-0 hover:scale-105 transition-transform duration-200"
+                  >
+                    <div className="font-action-base font-[number:var(--action-base-font-weight)] text-[#151517] text-[length:var(--action-base-font-size)] tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] [font-style:var(--action-base-font-style)]">
+                      View Creative Work
+                    </div>
+                    <ArrowRightIcon className="w-6 h-6 transition-transform duration-200 group-hover:translate-x-1" />
+                  </Button>
+                  
+                  <QuoteButton variant="primary" size="default">
+                    Start Creative Project
+                  </QuoteButton>
+                </div>
               </div>
             </div>
 
             <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-              <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative">
-                <div className="flex flex-col items-start gap-2 w-full z-10">
-                  <div className="w-fit mt-[-1.00px] font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
-                    Featured creative project:
-                  </div>
-
-                  <div className="w-[181px] font-title-h5 font-[number:var(--title-h5-font-weight)] text-[#101014] text-[length:var(--title-h5-font-size)] tracking-[var(--title-h5-letter-spacing)] leading-[var(--title-h5-line-height)] [font-style:var(--title-h5-font-style)]">
-                    Brand transformation through design.
-                  </div>
+              <div className="flex flex-col items-start gap-2 w-full z-10">
+                <div className="w-fit mt-[-1.00px] font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
+                  Featured creative project:
                 </div>
 
-                <img
-                  className="absolute top-0 left-0 w-[652px] h-[525px]"
-                  alt="Creative Design"
-                  src="https://c.animaapp.com/mfo404djpVGKfZ/img/technology.png"
-                />
+                <div className="w-[181px] font-title-h5 font-[number:var(--title-h5-font-weight)] text-[#101014] text-[length:var(--title-h5-font-size)] tracking-[var(--title-h5-letter-spacing)] leading-[var(--title-h5-line-height)] [font-style:var(--title-h5-font-style)]">
+                  Brand transformation through design.
+                </div>
               </div>
+
+              <img
+                className="absolute top-0 left-0 w-[652px] h-[525px]"
+                alt="Creative Design"
+                src="https://c.animaapp.com/mfo404djpVGKfZ/img/technology.png"
+              />
             </div>
           </div>
         </div>
