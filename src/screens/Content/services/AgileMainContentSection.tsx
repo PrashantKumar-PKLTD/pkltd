@@ -164,42 +164,38 @@ export const AgileMainContentSection = (): JSX.Element => {
               </div>
 
               <div className="flex items-center gap-4 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-                <div className="flex items-center gap-4">
-                  <Button
-                    variant="ghost"
-                    className="h-auto inline-flex items-center justify-center gap-2 rounded-lg p-0 hover:scale-105 transition-transform duration-200"
-                  >
-                    <div className="font-action-base font-[number:var(--action-base-font-weight)] text-[#151517] text-[length:var(--action-base-font-size)] tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] [font-style:var(--action-base-font-style)]">
-                      Explore Agile Solutions
-                    </div>
-                    <ArrowRightIcon className="w-6 h-6 transition-transform duration-200 group-hover:translate-x-1" />
-                  </Button>
-                  
-                  <QuoteButton variant="primary" size="default">
-                    Start Agile Journey
-                  </QuoteButton>
-                </div>
+                <Button
+                  variant="ghost"
+                  className="h-auto inline-flex items-center justify-center gap-2 rounded-lg p-0 hover:scale-105 transition-transform duration-200"
+                >
+                  <div className="font-action-base font-[number:var(--action-base-font-weight)] text-[#151517] text-[length:var(--action-base-font-size)] tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] [font-style:var(--action-base-font-style)]">
+                    Explore Agile Solutions
+                  </div>
+                  <ArrowRightIcon className="w-6 h-6 transition-transform duration-200 group-hover:translate-x-1" />
+                </Button>
+                
+                <QuoteButton variant="primary" size="default">
+                  Start Agile Journey
+                </QuoteButton>
               </div>
             </div>
 
             <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-              <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative">
-                <div className="flex flex-col items-start gap-2 w-full z-10">
-                  <div className="w-fit mt-[-1.00px] font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
-                    Featured agile project:
-                  </div>
-
-                  <div className="w-[181px] font-title-h5 font-[number:var(--title-h5-font-weight)] text-[#101014] text-[length:var(--title-h5-font-size)] tracking-[var(--title-h5-letter-spacing)] leading-[var(--title-h5-line-height)] [font-style:var(--title-h5-font-style)]">
-                    Team transformation success.
-                  </div>
+              <div className="flex flex-col items-start gap-2 w-full z-10">
+                <div className="w-fit mt-[-1.00px] font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
+                  Featured agile project:
                 </div>
 
-                <img
-                  className="absolute top-0 left-0 w-[652px] h-[525px]"
-                  alt="Agile Team"
-                  src="https://c.animaapp.com/mfo404djpVGKfZ/img/technology.png"
-                />
+                <div className="w-[181px] font-title-h5 font-[number:var(--title-h5-font-weight)] text-[#101014] text-[length:var(--title-h5-font-size)] tracking-[var(--title-h5-letter-spacing)] leading-[var(--title-h5-line-height)] [font-style:var(--title-h5-font-style)]">
+                  Team transformation success.
+                </div>
               </div>
+
+              <img
+                className="absolute top-0 left-0 w-[652px] h-[525px]"
+                alt="Agile Team"
+                src="https://c.animaapp.com/mfo404djpVGKfZ/img/technology.png"
+              />
             </div>
           </div>
         </div>
@@ -230,8 +226,8 @@ export const AgileMainContentSection = (): JSX.Element => {
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(0, 2).map((service, index) => (
                 <div
-                  key={index} 
-                  className="flex flex-col items-start gap-4 w-full"
+                  key={index}
+                  className={`flex flex-col items-start gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${800 + index * 200}ms]`}
                 >
                   <div className="gap-3 flex flex-col items-start w-full">
                     <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
@@ -255,8 +251,8 @@ export const AgileMainContentSection = (): JSX.Element => {
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(2, 4).map((service, index) => (
                 <div
-                  key={index + 2} 
-                  className="flex flex-col items-start gap-4 w-full"
+                  key={index + 2}
+                  className={`flex flex-col items-start gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${1200 + index * 200}ms]`}
                 >
                   <div className="gap-3 flex flex-col items-start w-full">
                     <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
