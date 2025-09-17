@@ -1,7 +1,7 @@
 import React from "react";
 import { FloatingCTA } from "../../../components/ui/floating-cta";
 import { ContactFooterSection } from "./ContactFooterSection";
-import { DataMainContentSection } from "./DataMainContentSection.tsx";
+import { DataMainContentSection } from "./DataMainContentSection";
 import { ProjectCallToActionSection } from "./ProjectCallToActionSection";
 import DataHero from "./DataHero.tsx";
 
