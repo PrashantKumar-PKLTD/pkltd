@@ -152,6 +152,7 @@ export const AgileMainContentSection = (): JSX.Element => {
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-center justify-center gap-8 min-h-[480px]">
             <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-8 pb-0 px-0 translate-y-[-1rem] animate-fade-in opacity-0">
+            <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-8 pb-0 px-0">
               <div className="gap-2 flex flex-col items-start w-full">
                 <div className="mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#151517] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] w-fit [font-style:var(--title-h6-font-style)]">
                   Empowering teams with <br />
@@ -178,6 +179,7 @@ export const AgileMainContentSection = (): JSX.Element => {
                   Start Agile Journey
                 </QuoteButton>
               </div>
+            </div>
             </div>
 
             <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
@@ -206,19 +208,19 @@ export const AgileMainContentSection = (): JSX.Element => {
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-start gap-8 w-full">
             <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
-              <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
-                <div className="gap-3 flex flex-col items-start w-full">
-                  <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
-                    AGILE SERVICES
-                  </div>
+            <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
+              <div className="gap-3 flex flex-col items-start w-full">
+                <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
+                  AGILE SERVICES
+                </div>
 
-                  <Separator className="w-full h-px bg-[#8a8a93]" />
+                <Separator className="w-full h-px bg-[#8a8a93]" />
 
-                  <div className="flex items-center justify-center text-[#101014] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
-                    We&apos;re agile experts transforming teams and delivering value faster.
-                  </div>
+                <div className="flex items-center justify-center text-[#101014] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
+                  We&apos;re agile experts transforming teams and delivering value faster.
                 </div>
               </div>
+            </div>
             </div>
 
             <div className="w-20" />
@@ -251,8 +253,8 @@ export const AgileMainContentSection = (): JSX.Element => {
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(2, 4).map((service, index) => (
                 <div
-                  key={index + 2}
-                  className={`flex flex-col items-start gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${1200 + index * 200}ms]`}
+                  key={index + 2} 
+                  className="flex flex-col items-start gap-4 w-full"
                 >
                   <div className="gap-3 flex flex-col items-start w-full">
                     <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
