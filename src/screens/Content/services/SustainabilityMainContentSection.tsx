@@ -198,6 +198,7 @@ export const SustainabilityMainContentSection = (): JSX.Element => {
                 src="https://c.animaapp.com/mfo404djpVGKfZ/img/technology.png"
               />
             </div>
+            </div>
           </div>
         </div>
       </section>
