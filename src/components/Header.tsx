@@ -124,7 +124,7 @@ const Header: React.FC = () => {
           {/* Left: Logo */}
           <a href="/" className="flex items-center min-w-0">
             <div>
-             <span className="font-extrabold ">PrashantKumarLTD</span>
+              <span className="font-extrabold">PrashantKumarLTD</span>
             </div>
           </a>
 
