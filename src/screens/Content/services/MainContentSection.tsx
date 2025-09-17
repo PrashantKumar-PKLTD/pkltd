@@ -12,7 +12,7 @@ import { QuoteButton } from "../../../components/ui/quote-button";
 import { ScrollIndicator } from "../../../components/ui/scroll-indicator";
 import { Separator } from "../../../components/ui/separator";
 import { SmoothScrollWrapper } from "../../../components/ui/smooth-scroll-wrapper";
-import LogoSection from "./LogoSection"
+import LogoSection from "./LogoSection";
 
 
 
@@ -519,10 +519,7 @@ export const MainContentSection = (): JSX.Element => {
             <SmoothScrollWrapper animationType="slide" delay={0}>
               <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
               <div className="gap-3 flex flex-col items-start w-full">
-                <div
--font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]"
-                  className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]"
-                >
+                <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                   AWARDS &amp; HONORS
                 </div>
 
