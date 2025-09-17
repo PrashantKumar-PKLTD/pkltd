@@ -226,8 +226,8 @@ export const AgileMainContentSection = (): JSX.Element => {
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(0, 2).map((service, index) => (
                 <div
-                  key={index}
-                  className={`flex flex-col items-start gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${800 + index * 200}ms]`}
+                  key={index} 
+                  className="flex flex-col items-start gap-4 w-full"
                 >
                   <div className="gap-3 flex flex-col items-start w-full">
                     <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
@@ -251,8 +251,8 @@ export const AgileMainContentSection = (): JSX.Element => {
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(2, 4).map((service, index) => (
                 <div
-                  key={index + 2}
-                  className={`flex flex-col items-start gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${1200 + index * 200}ms]`}
+                  key={index + 2} 
+                  className="flex flex-col items-start gap-4 w-full"
                 >
                   <div className="gap-3 flex flex-col items-start w-full">
                     <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
@@ -284,8 +284,8 @@ export const AgileMainContentSection = (): JSX.Element => {
           <div className="grid grid-cols-3 gap-8 w-full">
             {capabilitiesData.map((capability, index) => (
               <Card
-                key={index}
-                className={`group w-full h-[187px] bg-[#ffffff] rounded-[20px] border-0 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${1600 + index * 100}ms] hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer`}
+                key={index} 
+                className="group w-full h-[187px] bg-[#ffffff] rounded-[20px] border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
               >
                 <CardContent className="flex flex-col items-start justify-between p-[18px] h-full">
                   <div className="w-16 h-[63px] bg-[#f971161a] rounded-[10px] flex items-center justify-center group-hover:bg-[#f97316] transition-colors duration-300">

@@ -282,8 +282,8 @@ export const TechMainContentSection = (): JSX.Element => {
           <div className="grid grid-cols-3 gap-8 w-full">
             {capabilitiesData.map((capability, index) => (
               <Card
-                key={index}
-                className={`group w-full h-[187px] bg-[#ffffff] rounded-[20px] border-0 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${1600 + index * 100}ms] hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer`}
+                key={index} 
+                className="group w-full h-[187px] bg-[#ffffff] rounded-[20px] border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
               >
                 <CardContent className="flex flex-col items-start justify-between p-[18px] h-full">
                   <div className="w-16 h-[63px] bg-[#22c55e1a] rounded-[10px] flex items-center justify-center group-hover:bg-[#22c55e] transition-colors duration-300">
