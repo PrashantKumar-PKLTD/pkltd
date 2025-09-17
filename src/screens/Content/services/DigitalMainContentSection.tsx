@@ -155,55 +155,55 @@ export const DigitalMainContentSection = (): JSX.Element => {
           <div className="flex items-center justify-center gap-8 min-h-[480px]">
             <SmoothScrollWrapper animationType="slide" delay={0}>
               <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-8 pb-0 px-0">
-              <div className="gap-2 flex flex-col items-start w-full">
-                <div className="mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#151517] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] w-fit [font-style:var(--title-h6-font-style)]">
-                  Crafting digital experiences <br />
-                  that drive results.
-                </div>
-
-                <div className="flex items-center justify-center text-[#101014] text-[80px] tracking-[-2.20px] leading-[72px] w-full [font-family:'DM_Sans',Helvetica] font-bold">
-                  Digital solutions that scale.
-                </div>
-              </div>
-
-              <SmoothScrollWrapper animationType="fade" delay={200}>
-                <div className="flex items-center gap-4">
-                <Button
-                  variant="ghost"
-                  className="h-auto inline-flex items-center justify-center gap-2 rounded-lg p-0 hover:scale-105 transition-transform duration-200"
-                >
-                  <div className="font-action-base font-[number:var(--action-base-font-weight)] text-[#151517] text-[length:var(--action-base-font-size)] tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] [font-style:var(--action-base-font-style)]">
-                    Explore Digital Work
+                <div className="gap-2 flex flex-col items-start w-full">
+                  <div className="mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#151517] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] w-fit [font-style:var(--title-h6-font-style)]">
+                    Crafting digital experiences <br />
+                    that drive results.
                   </div>
-                  <ArrowRightIcon className="w-6 h-6 transition-transform duration-200 group-hover:translate-x-1" />
-                </Button>
-                
-                <QuoteButton variant="primary" size="default">
-                  Start Digital Project
-                </QuoteButton>
+
+                  <div className="flex items-center justify-center text-[#101014] text-[80px] tracking-[-2.20px] leading-[72px] w-full [font-family:'DM_Sans',Helvetica] font-bold">
+                    Digital solutions that scale.
+                  </div>
+                </div>
+
+                <SmoothScrollWrapper animationType="fade" delay={200}>
+                  <div className="flex items-center gap-4">
+                    <Button
+                      variant="ghost"
+                      className="h-auto inline-flex items-center justify-center gap-2 rounded-lg p-0 hover:scale-105 transition-transform duration-200"
+                    >
+                      <div className="font-action-base font-[number:var(--action-base-font-weight)] text-[#151517] text-[length:var(--action-base-font-size)] tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] [font-style:var(--action-base-font-style)]">
+                        Explore Digital Work
+                      </div>
+                      <ArrowRightIcon className="w-6 h-6 transition-transform duration-200 group-hover:translate-x-1" />
+                    </Button>
+                    
+                    <QuoteButton variant="primary" size="default">
+                      Start Digital Project
+                    </QuoteButton>
+                  </div>
+                </SmoothScrollWrapper>
               </div>
-              </SmoothScrollWrapper>
-            </div>
             </SmoothScrollWrapper>
 
             <SmoothScrollWrapper animationType="fade" delay={400}>
               <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative">
-              <div className="flex flex-col items-start gap-2 w-full z-10">
-                <div className="w-fit mt-[-1.00px] font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
-                  Featured digital project:
+                <div className="flex flex-col items-start gap-2 w-full z-10">
+                  <div className="w-fit mt-[-1.00px] font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
+                    Featured digital project:
+                  </div>
+
+                  <div className="w-[181px] font-title-h5 font-[number:var(--title-h5-font-weight)] text-[#101014] text-[length:var(--title-h5-font-size)] tracking-[var(--title-h5-letter-spacing)] leading-[var(--title-h5-line-height)] [font-style:var(--title-h5-font-style)]">
+                    Transforming digital presence.
+                  </div>
                 </div>
 
-                <div className="w-[181px] font-title-h5 font-[number:var(--title-h5-font-weight)] text-[#101014] text-[length:var(--title-h5-font-size)] tracking-[var(--title-h5-letter-spacing)] leading-[var(--title-h5-line-height)] [font-style:var(--title-h5-font-style)]">
-                  Transforming digital presence.
-                </div>
+                <img
+                  className="absolute top-0 left-0 w-[652px] h-[525px]"
+                  alt="Digital Technology"
+                  src="https://c.animaapp.com/mfo404djpVGKfZ/img/technology.png"
+                />
               </div>
-
-              <img
-                className="absolute top-0 left-0 w-[652px] h-[525px]"
-                alt="Digital Technology"
-                src="https://c.animaapp.com/mfo404djpVGKfZ/img/technology.png"
-              />
-            </div>
             </SmoothScrollWrapper>
           </div>
         </div>
@@ -216,18 +216,18 @@ export const DigitalMainContentSection = (): JSX.Element => {
           <div className="flex items-start gap-8 w-full">
             <SmoothScrollWrapper animationType="slide" delay={0}>
               <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
-              <div className="gap-3 flex flex-col items-start w-full">
-                <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
-                  DIGITAL SERVICES
-                </div>
+                <div className="gap-3 flex flex-col items-start w-full">
+                  <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
+                    DIGITAL SERVICES
+                  </div>
 
-                <Separator className="w-full h-px bg-[#8a8a93]" />
+                  <Separator className="w-full h-px bg-[#8a8a93]" />
 
-                <div className="flex items-center justify-center text-[#101014] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
-                  We&apos;re digital experts creating innovative solutions for modern businesses.
+                  <div className="flex items-center justify-center text-[#101014] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
+                    We&apos;re digital experts creating innovative solutions for modern businesses.
+                  </div>
                 </div>
               </div>
-            </div>
             </SmoothScrollWrapper>
 
             <div className="w-20" />
@@ -240,20 +240,21 @@ export const DigitalMainContentSection = (): JSX.Element => {
                   delay={200 + index * 100}
                 >
                   <div className="flex flex-col items-start gap-4 w-full">
-                  <div className="gap-3 flex flex-col items-start w-full">
-                    <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
-                      {service.category}
+                    <div className="gap-3 flex flex-col items-start w-full">
+                      <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
+                        {service.category}
+                      </div>
+
+                      <Separator className="w-full h-px bg-[#8a8a93]" />
+
+                      <div className="flex items-center justify-center w-full font-title-h4 font-[number:var(--title-h4-font-weight)] text-[#101014] text-[length:var(--title-h4-font-size)] tracking-[var(--title-h4-letter-spacing)] leading-[var(--title-h4-line-height)] [font-style:var(--title-h4-font-style)]">
+                        {service.title}
+                      </div>
                     </div>
 
-                    <Separator className="w-full h-px bg-[#8a8a93]" />
-
-                    <div className="flex items-center justify-center w-full font-title-h4 font-[number:var(--title-h4-font-weight)] text-[#101014] text-[length:var(--title-h4-font-size)] tracking-[var(--title-h4-letter-spacing)] leading-[var(--title-h4-line-height)] [font-style:var(--title-h4-font-style)]">
-                      {service.title}
+                    <div className="w-full font-body-base font-[number:var(--body-base-font-weight)] text-[#151517] text-[length:var(--body-base-font-size)] tracking-[var(--body-base-letter-spacing)] leading-[var(--body-base-line-height)] [font-style:var(--body-base-font-style)]">
+                      {service.description}
                     </div>
-                  </div>
-
-                  <div className="w-full font-body-base font-[number:var(--body-base-font-weight)] text-[#151517] text-[length:var(--body-base-font-size)] tracking-[var(--body-base-letter-spacing)] leading-[var(--body-base-line-height)] [font-style:var(--body-base-font-style)]">
-                    {service.description}
                   </div>
                 </SmoothScrollWrapper>
               ))}
@@ -267,23 +268,24 @@ export const DigitalMainContentSection = (): JSX.Element => {
                   delay={400 + index * 100}
                 >
                   <div className="flex flex-col items-start gap-4 w-full">
-                  <div className="gap-3 flex flex-col items-start w-full">
-                    <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
-                      {service.category}
+                    <div className="gap-3 flex flex-col items-start w-full">
+                      <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
+                        {service.category}
+                      </div>
+
+                      <Separator className="w-full h-px bg-[#8a8a93]" />
+
+                      <div className="flex items-center justify-center w-full font-title-h4 font-[number:var(--title-h4-font-weight)] text-[#101014] text-[length:var(--title-h4-font-size)] tracking-[var(--title-h4-letter-spacing)] leading-[var(--title-h4-line-height)] [font-style:var(--title-h4-font-style)]">
+                        {service.title}
+                      </div>
                     </div>
 
-                    <Separator className="w-full h-px bg-[#8a8a93]" />
-
-                    <div className="flex items-center justify-center w-full font-title-h4 font-[number:var(--title-h4-font-weight)] text-[#101014] text-[length:var(--title-h4-font-size)] tracking-[var(--title-h4-letter-spacing)] leading-[var(--title-h4-line-height)] [font-style:var(--title-h4-font-style)]">
-                      {service.title}
+                    <div className="w-full font-body-base font-[number:var(--body-base-font-weight)] text-[#151517] text-[length:var(--body-base-font-size)] tracking-[var(--body-base-letter-spacing)] leading-[var(--body-base-line-height)] [font-style:var(--body-base-font-style)]">
+                      {service.description}
                     </div>
                   </div>
-
-                  <div className="w-full font-body-base font-[number:var(--body-base-font-weight)] text-[#151517] text-[length:var(--body-base-font-size)] tracking-[var(--body-base-letter-spacing)] leading-[var(--body-base-line-height)] [font-style:var(--body-base-font-style)]">
-                    {service.description}
-                  </div>
-                </div>
                 </SmoothScrollWrapper>
+              ))}
             </div>
           </div>
         </div>
@@ -303,19 +305,19 @@ export const DigitalMainContentSection = (): JSX.Element => {
                 delay={index * 100}
               >
                 <Card className="group w-full h-[187px] bg-[#ffffff] rounded-[20px] border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
-                <CardContent className="flex flex-col items-start justify-between p-[18px] h-full">
-                  <div className="w-16 h-[63px] bg-[#3b82f61a] rounded-[10px] flex items-center justify-center group-hover:bg-[#3b82f6] transition-colors duration-300">
-                    <img
-                      className="w-[50px] h-[50px] group-hover:brightness-0 group-hover:invert transition-all duration-300"
-                      alt={capability.alt}
-                      src={capability.icon}
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-full h-9 font-title-h4 font-[number:var(--title-h4-font-weight)] text-[#101014] text-[length:var(--title-h4-font-size)] tracking-[var(--title-h4-letter-spacing)] leading-[var(--title-h4-line-height)] [font-style:var(--title-h4-font-style)] group-hover:text-[#3b82f6] transition-colors duration-300">
-                    {capability.title}
-                  </div>
-                </CardContent>
-              </Card>
+                  <CardContent className="flex flex-col items-start justify-between p-[18px] h-full">
+                    <div className="w-16 h-[63px] bg-[#3b82f61a] rounded-[10px] flex items-center justify-center group-hover:bg-[#3b82f6] transition-colors duration-300">
+                      <img
+                        className="w-[50px] h-[50px] group-hover:brightness-0 group-hover:invert transition-all duration-300"
+                        alt={capability.alt}
+                        src={capability.icon}
+                      />
+                    </div>
+                    <div className="flex items-center justify-center w-full h-9 font-title-h4 font-[number:var(--title-h4-font-weight)] text-[#101014] text-[length:var(--title-h4-font-size)] tracking-[var(--title-h4-letter-spacing)] leading-[var(--title-h4-line-height)] [font-style:var(--title-h4-font-style)] group-hover:text-[#3b82f6] transition-colors duration-300">
+                      {capability.title}
+                    </div>
+                  </CardContent>
+                </Card>
               </SmoothScrollWrapper>
             ))}
           </div>
@@ -329,18 +331,18 @@ export const DigitalMainContentSection = (): JSX.Element => {
           <div className="flex items-start gap-8 w-full">
             <SmoothScrollWrapper animationType="slide" delay={0}>
               <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-0 pb-2 px-0">
-              <div className="gap-3 flex flex-col items-start w-full">
-                <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
-                  DIGITAL CAPABILITIES
-                </div>
+                <div className="gap-3 flex flex-col items-start w-full">
+                  <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
+                    DIGITAL CAPABILITIES
+                  </div>
 
-                <Separator className="w-full h-px bg-[#8a8a93]" />
+                  <Separator className="w-full h-px bg-[#8a8a93]" />
 
-                <div className="text-[#101014] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
-                  Modern digital solutions with cutting-edge technology.
+                  <div className="text-[#101014] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
+                    Modern digital solutions with cutting-edge technology.
+                  </div>
                 </div>
               </div>
-            </div>
             </SmoothScrollWrapper>
 
             <div className="w-20" />
@@ -352,86 +354,86 @@ export const DigitalMainContentSection = (): JSX.Element => {
           <div className="flex items-center justify-center w-full">
             <SmoothScrollWrapper animationType="fade" delay={200}>
               <div className="flex flex-col w-full max-w-[936px] items-start justify-center gap-8 px-0 py-24">
-              <img
-                className="flex-1 w-full object-cover"
-                alt="Digital Team Working"
-                src="https://c.animaapp.com/mfo404djpVGKfZ/img/stock-photo-portrait-of-successful-group-of-people-working-at-on.png"
-              />
-            </div>
+                <img
+                  className="flex-1 w-full object-cover"
+                  alt="Digital Team Working"
+                  src="https://c.animaapp.com/mfo404djpVGKfZ/img/stock-photo-portrait-of-successful-group-of-people-working-at-on.png"
+                />
+              </div>
             </SmoothScrollWrapper>
 
             <SmoothScrollWrapper animationType="fade" delay={400}>
               <div className="flex flex-col items-start gap-8 pl-24 pr-0 py-24 flex-1 bg-[#ffffff]">
-              <div className="flex items-center gap-4 mb-6">
-                <Button
-                  variant="ghost"
-                  className="h-auto inline-flex items-center gap-3 hover:scale-105 transition-transform duration-200"
-                >
-                  <div className="flex w-14 h-14 items-center justify-center gap-2.5 p-3.5 bg-[#151517] rounded-[50px] shadow-outline-shadow-animation hover:bg-[#3b82f6] transition-colors duration-300">
-                    <PlayIcon className="w-6 h-6 text-white" />
-                  </div>
-                  <div className="font-action-base font-[number:var(--action-base-font-weight)] text-[#101014] text-[length:var(--action-base-font-size)] tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] whitespace-nowrap [font-style:var(--action-base-font-style)]">
-                    Watch Digital Demo
-                  </div>
-                </Button>
-                
-                <QuoteButton variant="outline" size="default">
-                  Digital Consultation
-                </QuoteButton>
-              </div>
-
-              <div className="gap-3 flex flex-col items-start w-full">
-                <div className="mt-[-1.00px] text-[#101014] text-[length:var(--title-h3-font-size)] tracking-[var(--title-h3-letter-spacing)] leading-[var(--title-h3-line-height)] w-full font-title-h3 font-[number:var(--title-h3-font-weight)] [font-style:var(--title-h3-font-style)]">
-                  We specialize in digital transformation, web development, and user experience design.
+                <div className="flex items-center gap-4 mb-6">
+                  <Button
+                    variant="ghost"
+                    className="h-auto inline-flex items-center gap-3 hover:scale-105 transition-transform duration-200"
+                  >
+                    <div className="flex w-14 h-14 items-center justify-center gap-2.5 p-3.5 bg-[#151517] rounded-[50px] shadow-outline-shadow-animation hover:bg-[#3b82f6] transition-colors duration-300">
+                      <PlayIcon className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="font-action-base font-[number:var(--action-base-font-weight)] text-[#101014] text-[length:var(--action-base-font-size)] tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] whitespace-nowrap [font-style:var(--action-base-font-style)]">
+                      Watch Digital Demo
+                    </div>
+                  </Button>
+                  
+                  <QuoteButton variant="outline" size="default">
+                    Digital Consultation
+                  </QuoteButton>
                 </div>
+
+                <div className="gap-3 flex flex-col items-start w-full">
+                  <div className="mt-[-1.00px] text-[#101014] text-[length:var(--title-h3-font-size)] tracking-[var(--title-h3-letter-spacing)] leading-[var(--title-h3-line-height)] w-full font-title-h3 font-[number:var(--title-h3-font-weight)] [font-style:var(--title-h3-font-style)]">
+                    We specialize in digital transformation, web development, and user experience design.
+                  </div>
+                </div>
+
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="item-1" className="border-0">
+                    <AccordionTrigger className="flex h-10 items-center w-full hover:no-underline">
+                      <div className="flex items-center gap-4 w-full">
+                        <div className="flex w-10 h-10 items-center justify-center gap-1.5 p-3 rounded-3xl">
+                          <MinusIcon className="w-5 h-5" />
+                        </div>
+                        <div className="flex items-center justify-center flex-1 mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#101014] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] [font-style:var(--title-h6-font-style)]">
+                          What digital services do we provide?
+                        </div>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="flex flex-col items-start gap-4 px-0 py-1 w-full">
+                      <div className="w-full mt-[-1.00px] font-body-base font-[number:var(--body-base-font-weight)] text-[#151517] text-[length:var(--body-base-font-size)] tracking-[var(--body-base-letter-spacing)] leading-[var(--body-base-line-height)] [font-style:var(--body-base-font-style)]">
+                        We offer comprehensive digital solutions including web development, mobile apps, e-commerce platforms, digital marketing, and user experience design.
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-2" className="border-0">
+                    <AccordionTrigger className="h-[51px] flex items-center w-full hover:no-underline">
+                      <div className="flex items-center gap-4 w-full">
+                        <div className="flex w-10 h-10 items-center justify-center gap-1.5 p-3 rounded-3xl">
+                          <PlusIcon className="w-5 h-5" />
+                        </div>
+                        <div className="flex items-center justify-center flex-1 mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#101014] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] [font-style:var(--title-h6-font-style)]">
+                          How do you ensure mobile responsiveness?
+                        </div>
+                      </div>
+                    </AccordionTrigger>
+                  </AccordionItem>
+
+                  <AccordionItem value="item-3" className="border-0">
+                    <AccordionTrigger className="h-11 flex items-center w-full hover:no-underline">
+                      <div className="flex items-center gap-4 w-full">
+                        <div className="flex w-10 h-10 items-center justify-center gap-1.5 p-3 rounded-3xl">
+                          <PlusIcon className="w-5 h-5" />
+                        </div>
+                        <div className="flex items-center justify-center flex-1 mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#101014] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] [font-style:var(--title-h6-font-style)]">
+                          Can you integrate with existing systems?
+                        </div>
+                      </div>
+                    </AccordionTrigger>
+                  </AccordionItem>
+                </Accordion>
               </div>
-
-              <Accordion type="single" collapsible className="w-full">
-                <AccordionItem value="item-1" className="border-0">
-                  <AccordionTrigger className="flex h-10 items-center w-full hover:no-underline">
-                    <div className="flex items-center gap-4 w-full">
-                      <div className="flex w-10 h-10 items-center justify-center gap-1.5 p-3 rounded-3xl">
-                        <MinusIcon className="w-5 h-5" />
-                      </div>
-                      <div className="flex items-center justify-center flex-1 mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#101014] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] [font-style:var(--title-h6-font-style)]">
-                        What digital services do we provide?
-                      </div>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="flex flex-col items-start gap-4 px-0 py-1 w-full">
-                    <div className="w-full mt-[-1.00px] font-body-base font-[number:var(--body-base-font-weight)] text-[#151517] text-[length:var(--body-base-font-size)] tracking-[var(--body-base-letter-spacing)] leading-[var(--body-base-line-height)] [font-style:var(--body-base-font-style)]">
-                      We offer comprehensive digital solutions including web development, mobile apps, e-commerce platforms, digital marketing, and user experience design.
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-2" className="border-0">
-                  <AccordionTrigger className="h-[51px] flex items-center w-full hover:no-underline">
-                    <div className="flex items-center gap-4 w-full">
-                      <div className="flex w-10 h-10 items-center justify-center gap-1.5 p-3 rounded-3xl">
-                        <PlusIcon className="w-5 h-5" />
-                      </div>
-                      <div className="flex items-center justify-center flex-1 mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#101014] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] [font-style:var(--title-h6-font-style)]">
-                        How do you ensure mobile responsiveness?
-                      </div>
-                    </div>
-                  </AccordionTrigger>
-                </AccordionItem>
-
-                <AccordionItem value="item-3" className="border-0">
-                  <AccordionTrigger className="h-11 flex items-center w-full hover:no-underline">
-                    <div className="flex items-center gap-4 w-full">
-                      <div className="flex w-10 h-10 items-center justify-center gap-1.5 p-3 rounded-3xl">
-                        <PlusIcon className="w-5 h-5" />
-                      </div>
-                      <div className="flex items-center justify-center flex-1 mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#101014] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] [font-style:var(--title-h6-font-style)]">
-                        Can you integrate with existing systems?
-                      </div>
-                    </div>
-                  </AccordionTrigger>
-                </AccordionItem>
-              </Accordion>
-            </div>
             </SmoothScrollWrapper>
 
             <div className="w-[184px] bg-[#ffffff]" />
@@ -452,43 +454,43 @@ export const DigitalMainContentSection = (): JSX.Element => {
           <div className="flex items-center justify-center gap-10 w-full">
             <SmoothScrollWrapper animationType="scale" delay={0}>
               <div className="flex flex-col items-start justify-center gap-8 flex-1 bg-[#3b82f61a]">
-              <div className="w-full h-[806px] bg-[#3b82f6] overflow-hidden relative">
-                {processSteps.map((step, index) => (
-                  <div
-                    key={index}
-                    className={`flex w-[51.22%] items-start pt-24 pb-0 px-0 absolute top-[calc(50.00%_-_404px)] bg-[#ffffff] ${index === 0 ? "left-0 shadow-accordion-shadow" : index === 1 ? "left-[24.39%] shadow-accordion-shadow" : "left-[48.78%]"}`}
-                  >
-                    <div className="flex flex-col items-start flex-1">
-                      <div className="flex flex-col items-start gap-6 pt-0 pb-12 px-0 w-full">
-                        <div className="flex flex-col items-start gap-5 pl-0 pr-24 py-0 w-full">
-                          <div className="gap-3 flex flex-col items-start w-full">
-                            <Separator className="w-full h-px bg-[#8a8a93]" />
+                <div className="w-full h-[806px] bg-[#3b82f6] overflow-hidden relative">
+                  {processSteps.map((step, index) => (
+                    <div
+                      key={index}
+                      className={`flex w-[51.22%] items-start pt-24 pb-0 px-0 absolute top-[calc(50.00%_-_404px)] bg-[#ffffff] ${index === 0 ? "left-0 shadow-accordion-shadow" : index === 1 ? "left-[24.39%] shadow-accordion-shadow" : "left-[48.78%]"}`}
+                    >
+                      <div className="flex flex-col items-start flex-1">
+                        <div className="flex flex-col items-start gap-6 pt-0 pb-12 px-0 w-full">
+                          <div className="flex flex-col items-start gap-5 pl-0 pr-24 py-0 w-full">
+                            <div className="gap-3 flex flex-col items-start w-full">
+                              <Separator className="w-full h-px bg-[#8a8a93]" />
 
-                            <div className="font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap w-fit [font-style:var(--title-subtitle-font-style)]">
-                              {step.stepNumber}
+                              <div className="font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap w-fit [font-style:var(--title-subtitle-font-style)]">
+                                {step.stepNumber}
+                              </div>
+
+                              <div className="text-[#101014] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
+                                {step.title}
+                              </div>
                             </div>
 
-                            <div className="text-[#101014] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
-                              {step.title}
+                            <div className="w-full font-body-base font-[number:var(--body-base-font-weight)] text-[#151517] text-[length:var(--body-base-font-size)] tracking-[var(--body-base-letter-spacing)] leading-[var(--body-base-line-height)] [font-style:var(--body-base-font-style)]">
+                              {step.description}
                             </div>
-                          </div>
-
-                          <div className="w-full font-body-base font-[number:var(--body-base-font-weight)] text-[#151517] text-[length:var(--body-base-font-size)] tracking-[var(--body-base-letter-spacing)] leading-[var(--body-base-line-height)] [font-style:var(--body-base-font-style)]">
-                            {step.description}
                           </div>
                         </div>
-                      </div>
 
-                      <img
-                        className="w-full h-[399.5px] object-cover"
-                        alt="Digital Process Step"
-                        src={step.image}
-                      />
+                        <img
+                          className="w-full h-[399.5px] object-cover"
+                          alt="Digital Process Step"
+                          src={step.image}
+                        />
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
             </SmoothScrollWrapper>
           </div>
         </div>
@@ -501,85 +503,85 @@ export const DigitalMainContentSection = (): JSX.Element => {
           <div className="flex items-start gap-8 w-full">
             <SmoothScrollWrapper animationType="slide" delay={0}>
               <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
-              <div className="gap-3 flex flex-col items-start w-full">
-                <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
-                  DIGITAL AWARDS & RECOGNITION
-                </div>
+                <div className="gap-3 flex flex-col items-start w-full">
+                  <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
+                    DIGITAL AWARDS & RECOGNITION
+                  </div>
 
-                <Separator className="w-full h-px bg-[#8a8a93]" />
+                  <Separator className="w-full h-px bg-[#8a8a93]" />
 
-                <div className="text-[#101014] text-[length:var(--title-h3-font-size)] tracking-[var(--title-h3-letter-spacing)] leading-[var(--title-h3-line-height)] w-full font-title-h3 font-[number:var(--title-h3-font-weight)] [font-style:var(--title-h3-font-style)]">
-                  Recognition for digital <br />
-                  innovation excellence.
+                  <div className="text-[#101014] text-[length:var(--title-h3-font-size)] tracking-[var(--title-h3-letter-spacing)] leading-[var(--title-h3-line-height)] w-full font-title-h3 font-[number:var(--title-h3-font-weight)] [font-style:var(--title-h3-font-style)]">
+                    Recognition for digital <br />
+                    innovation excellence.
+                  </div>
                 </div>
               </div>
-            </div>
             </SmoothScrollWrapper>
 
             <div className="w-20" />
 
             <SmoothScrollWrapper animationType="fade" delay={200}>
               <div className="flex flex-col items-start justify-center gap-8 flex-1">
-              <div className="w-[542px] mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#151517] text-[17.2px] tracking-[-0.34px] leading-[27.5px]">
-                <span className="tracking-[-0.06px]">
-                  Leading the way in{" "}
-                </span>
+                <div className="w-[542px] mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#151517] text-[17.2px] tracking-[-0.34px] leading-[27.5px]">
+                  <span className="tracking-[-0.06px]">
+                    Leading the way in{" "}
+                  </span>
 
-                <span className="font-bold tracking-[-0.06px]">
-                  digital transformation
-                </span>
+                  <span className="font-bold tracking-[-0.06px]">
+                    digital transformation
+                  </span>
 
-                <span className="tracking-[-0.06px]"> and </span>
+                  <span className="tracking-[-0.06px]"> and </span>
 
-                <span className="font-bold tracking-[-0.06px]">user experience</span>
+                  <span className="font-bold tracking-[-0.06px]">user experience</span>
 
-                <span className="tracking-[-0.06px]"> design.</span>
-              </div>
+                  <span className="tracking-[-0.06px]"> design.</span>
+                </div>
 
-              <div className="flex items-center justify-center gap-8 w-full">
-                {awardsData[0].map((award, index) => (
-                  <div
-                    key={index}
-                    className="flex flex-col items-start justify-center gap-9 flex-1"
-                  >
-                    <img
-                      className={`object-cover ${index === 0 ? "w-[124px] h-[67px]" : index === 1 ? "w-[68px] h-[86px]" : "w-[122px] h-[75px]"}`}
-                      alt={award.alt}
-                      src={award.image}
-                    />
+                <div className="flex items-center justify-center gap-8 w-full">
+                  {awardsData[0].map((award, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col items-start justify-center gap-9 flex-1"
+                    >
+                      <img
+                        className={`object-cover ${index === 0 ? "w-[124px] h-[67px]" : index === 1 ? "w-[68px] h-[86px]" : "w-[122px] h-[75px]"}`}
+                        alt={award.alt}
+                        src={award.image}
+                      />
 
-                    <div className="flex items-center justify-center w-fit font-body-small font-[number:var(--body-small-font-weight)] text-demo-2dark text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
-                      {award.title}
+                      <div className="flex items-center justify-center w-fit font-body-small font-[number:var(--body-small-font-weight)] text-demo-2dark text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
+                        {award.title}
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
 
-              <div className="flex items-center justify-center gap-8 w-full">
-                {awardsData[1].map((award, index) => (
-                  <div
-                    key={index}
-                    className="flex flex-col items-start justify-center gap-4 flex-1"
-                  >
-                    {award ? (
-                      <>
-                        <img
-                          className={`object-cover ${index === 0 ? "w-[126px] h-[47px]" : "w-[172px] h-[43px]"}`}
-                          alt={award.alt}
-                          src={award.image}
-                        />
+                <div className="flex items-center justify-center gap-8 w-full">
+                  {awardsData[1].map((award, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col items-start justify-center gap-4 flex-1"
+                    >
+                      {award ? (
+                        <>
+                          <img
+                            className={`object-cover ${index === 0 ? "w-[126px] h-[47px]" : "w-[172px] h-[43px]"}`}
+                            alt={award.alt}
+                            src={award.image}
+                          />
 
-                        <div className="flex items-center justify-center w-[173px] h-6 font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
-                          {award.title}
-                        </div>
-                      </>
-                    ) : (
-                      <div className="flex-1 h-[92px]" />
-                    )}
-                  </div>
-                ))}
+                          <div className="flex items-center justify-center w-[173px] h-6 font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
+                            {award.title}
+                          </div>
+                        </>
+                      ) : (
+                        <div className="flex-1 h-[92px]" />
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
             </SmoothScrollWrapper>
           </div>
         </div>
@@ -592,18 +594,18 @@ export const DigitalMainContentSection = (): JSX.Element => {
         <div className="w-full max-w-[632px]" />
         <SmoothScrollWrapper animationType="slide" delay={0}>
           <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-0 pb-2 px-0">
-          <div className="gap-3 flex flex-col items-start w-full">
-            <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
-              DIGITAL FEATURES
-            </div>
+            <div className="gap-3 flex flex-col items-start w-full">
+              <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
+                DIGITAL FEATURES
+              </div>
 
-            <Separator className="w-full h-px bg-[#8a8a93]" />
+              <Separator className="w-full h-px bg-[#8a8a93]" />
 
-            <div className="text-[#101014] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
-              Where creativity meets technology
+              <div className="text-[#101014] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
+                Where creativity meets technology
+              </div>
             </div>
           </div>
-        </div>
         </SmoothScrollWrapper>
         <ScrollIndicator targetId="digital-cta-section" />
       </section>
@@ -614,35 +616,35 @@ export const DigitalMainContentSection = (): JSX.Element => {
           <div className="flex items-start justify-center gap-8 w-full">
             <SmoothScrollWrapper animationType="slide" delay={0}>
               <div className="flex flex-col items-start justify-center gap-8 flex-1">
-              <div className="gap-2 flex flex-col items-start w-full">
-                <div className="mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#888889] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap w-fit [font-style:var(--title-subtitle-font-style)]">
-                  DIGITAL COLLABORATION
-                </div>
+                <div className="gap-2 flex flex-col items-start w-full">
+                  <div className="mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#888889] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap w-fit [font-style:var(--title-subtitle-font-style)]">
+                    DIGITAL COLLABORATION
+                  </div>
 
-                <div className="text-[#ffffff] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
-                  Ready to go digital?
-                  <br />
-                  Let&apos;s create together.
+                  <div className="text-[#ffffff] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
+                    Ready to go digital?
+                    <br />
+                    Let&apos;s create together.
+                  </div>
                 </div>
               </div>
-            </div>
             </SmoothScrollWrapper>
 
             <SmoothScrollWrapper animationType="fade" delay={200}>
               <div className="flex flex-col items-end gap-8 pt-[42px] pb-0 px-0 flex-1">
-              <div className="flex items-center gap-4">
-                <QuoteButton variant="primary" size="lg">
-                  Start Digital Project
-                </QuoteButton>
-                
-                <Button className="h-11 px-5 py-3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#101014] inline-flex items-center justify-center gap-2 rounded-lg transition-all duration-300">
-                  <div className="flex items-center justify-center w-fit mt-[-3.00px] mb-[-1.00px] font-action-base font-[number:var(--action-base-font-weight)] text-[length:var(--action-base-font-size)] text-center tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] whitespace-nowrap [font-style:var(--action-base-font-style)]">
-                    Digital Consultation
-                  </div>
-                  <ArrowRightIcon className="mt-[-2.00px] mb-[-2.00px] w-6 h-6" />
-                </Button>
+                <div className="flex items-center gap-4">
+                  <QuoteButton variant="primary" size="lg">
+                    Start Digital Project
+                  </QuoteButton>
+                  
+                  <Button className="h-11 px-5 py-3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#101014] inline-flex items-center justify-center gap-2 rounded-lg transition-all duration-300">
+                    <div className="flex items-center justify-center w-fit mt-[-3.00px] mb-[-1.00px] font-action-base font-[number:var(--action-base-font-weight)] text-[length:var(--action-base-font-size)] text-center tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] whitespace-nowrap [font-style:var(--action-base-font-style)]">
+                      Digital Consultation
+                    </div>
+                    <ArrowRightIcon className="mt-[-2.00px] mb-[-2.00px] w-6 h-6" />
+                  </Button>
+                </div>
               </div>
-            </div>
             </SmoothScrollWrapper>
           </div>
 
@@ -653,10 +655,10 @@ export const DigitalMainContentSection = (): JSX.Element => {
           <div className="flex items-center justify-center gap-8 w-full">
             <SmoothScrollWrapper animationType="fade" delay={400}>
               <div className="flex flex-col items-start justify-center gap-8 flex-1">
-              <div className="w-full mt-[-1.00px] font-body-large font-[number:var(--body-large-font-weight)] text-[#ffffffbf] text-[length:var(--body-large-font-size)] tracking-[var(--body-large-letter-spacing)] leading-[var(--body-large-line-height)] [font-style:var(--body-large-font-style)]">
-                We&apos;re digital transformation experts who are passionate about creating innovative solutions that help businesses thrive in the digital age through cutting-edge technology and user-centered design.
+                <div className="w-full mt-[-1.00px] font-body-large font-[number:var(--body-large-font-weight)] text-[#ffffffbf] text-[length:var(--body-large-font-size)] tracking-[var(--body-large-letter-spacing)] leading-[var(--body-large-line-height)] [font-style:var(--body-large-font-style)]">
+                  We&apos;re digital transformation experts who are passionate about creating innovative solutions that help businesses thrive in the digital age through cutting-edge technology and user-centered design.
+                </div>
               </div>
-            </div>
             </SmoothScrollWrapper>
 
             <div className="flex-1 h-[50px]" />
