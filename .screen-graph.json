@@ -69,9 +69,9 @@
   ],
   "edges": [
     {
-      "id": "src\\components\\Header.tsx:125:10-to-src\\screens\\Content\\Content.tsx",
-      "source": "src\\screens\\Content\\Content.tsx",
-      "target": "src\\screens\\Content\\Content.tsx",
+      "id": "src/components/Header.tsx:125:10-to-src/screens/Content/Content.tsx",
+      "source": "src/screens/Content/Content.tsx",
+      "target": "src/screens/Content/Content.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
@@ -80,14 +80,14 @@
           "endLine": 129,
           "column": 10,
           "endColumn": 14,
-          "sourceFile": "src\\components\\Header.tsx"
+          "sourceFile": "src/components/Header.tsx"
         }
       }
     },
     {
-      "id": "src\\components\\Header.tsx:220:10-to-src\\screens\\Content\\Content.tsx",
-      "source": "src\\screens\\Content\\Content.tsx",
-      "target": "src\\screens\\Content\\Content.tsx",
+      "id": "src/components/Header.tsx:220:10-to-src/screens/Content/Content.tsx",
+      "source": "src/screens/Content/Content.tsx",
+      "target": "src/screens/Content/Content.tsx",
       "data": {
         "viaRoute": "/",
         "trigger": {
@@ -96,7 +96,7 @@
           "endLine": 224,
           "column": 10,
           "endColumn": 14,
-          "sourceFile": "src\\components\\Header.tsx"
+          "sourceFile": "src/components/Header.tsx"
         }
       }
     }
