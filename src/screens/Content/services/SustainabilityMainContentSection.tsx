@@ -152,6 +152,7 @@ export const SustainabilityMainContentSection = (): JSX.Element => {
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-center justify-center gap-8 min-h-[480px]">
             <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-8 pb-0 px-0 translate-y-[-1rem] animate-fade-in opacity-0">
+            <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-8 pb-0 px-0">
               <div className="gap-2 flex flex-col items-start w-full">
                 <div className="mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#151517] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] w-fit [font-style:var(--title-h6-font-style)]">
                   Building a sustainable future <br />
@@ -179,9 +180,9 @@ export const SustainabilityMainContentSection = (): JSX.Element => {
                 </QuoteButton>
               </div>
             </div>
+            </div>
 
             <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-            <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative">
               <div className="flex flex-col items-start gap-2 w-full z-10">
                 <div className="w-fit mt-[-1.00px] font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
                   Featured sustainability project:
@@ -197,7 +198,6 @@ export const SustainabilityMainContentSection = (): JSX.Element => {
                 alt="Sustainability Technology"
                 src="https://c.animaapp.com/mfo404djpVGKfZ/img/technology.png"
               />
-            </div>
             </div>
           </div>
         </div>
