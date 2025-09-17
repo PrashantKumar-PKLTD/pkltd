@@ -164,6 +164,7 @@ export const AgileMainContentSection = (): JSX.Element => {
               </div>
 
               <div className="flex items-center gap-4 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+              <div className="flex items-center gap-4">
                 <Button
                   variant="ghost"
                   className="h-auto inline-flex items-center justify-center gap-2 rounded-lg p-0 hover:scale-105 transition-transform duration-200"
@@ -206,6 +207,7 @@ export const AgileMainContentSection = (): JSX.Element => {
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-start gap-8 w-full">
             <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
+            <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
               <div className="gap-3 flex flex-col items-start w-full">
                 <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                   AGILE SERVICES
@@ -224,8 +226,8 @@ export const AgileMainContentSection = (): JSX.Element => {
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(0, 2).map((service, index) => (
                 <div
-                  key={index}
-                  className={`flex flex-col items-start gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${800 + index * 200}ms]`}
+                  key={index} 
+                  className="flex flex-col items-start gap-4 w-full"
                 >
                   <div className="gap-3 flex flex-col items-start w-full">
                     <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
@@ -249,8 +251,8 @@ export const AgileMainContentSection = (): JSX.Element => {
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(2, 4).map((service, index) => (
                 <div
-                  key={index + 2}
-                  className={`flex flex-col items-start gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${1200 + index * 200}ms]`}
+                  key={index + 2} 
+                  className="flex flex-col items-start gap-4 w-full"
                 >
                   <div className="gap-3 flex flex-col items-start w-full">
                     <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
