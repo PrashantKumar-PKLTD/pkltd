@@ -1,7 +1,7 @@
 import React from "react";
 import { FloatingCTA } from "../../../components/ui/floating-cta";
 import { ContactFooterSection } from "./ContactFooterSection";
-import { MainContentSection } from "./MainContentSection";
+import { AgileMainContentSection } from "./AgileMainContentSection";
 import { ProjectCallToActionSection } from "./ProjectCallToActionSection";
 import AgileHero from "./AgileHero";
 
@@ -41,7 +41,7 @@ export const Home = (): JSX.Element => {
       <div className="relative z-10">
         <section className="w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
           <AgileHero />
-          <MainContentSection />
+          <AgileMainContentSection />
         </section>
 
         <section className="w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
