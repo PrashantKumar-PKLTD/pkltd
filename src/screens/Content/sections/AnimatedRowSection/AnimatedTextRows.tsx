@@ -27,7 +27,7 @@ const AnimatedTextRows: React.FC = () => {
                 {row1Text.map((text, textIndex) => (
                   <span
                     key={`${index}-${textIndex}`}
-                    className="text-4xl md:text-6xl lg:text-7xl font-bold text-white/70 mx-8 hover:text-white/30 transition-colors duration-300"
+                    className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mx-8 hover:text-white/80 transition-colors duration-300"
                   >
                     {text} /
                   </span>
@@ -45,7 +45,7 @@ const AnimatedTextRows: React.FC = () => {
                 {row2Text.map((text, textIndex) => (
                   <span
                     key={`${index}-${textIndex}`}
-                    className="text-4xl md:text-6xl lg:text-7xl font-bold text-white/70 mx-8 hover:text-white/30 transition-colors duration-300"
+                    className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mx-8 hover:text-white/80 transition-colors duration-300"
                   >
                     {text} /
                   </span>
@@ -63,7 +63,7 @@ const AnimatedTextRows: React.FC = () => {
                 {row3Text.map((text, textIndex) => (
                   <span
                     key={`${index}-${textIndex}`}
-                    className="text-4xl md:text-6xl lg:text-7xl font-bold text-white/70 mx-8 hover:text-white/30 transition-colors duration-300"
+                    className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mx-8 hover:text-white/80 transition-colors duration-300"
                   >
                     {text} /
                   </span>
