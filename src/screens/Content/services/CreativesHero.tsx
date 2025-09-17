@@ -170,9 +170,7 @@ export const Home = (): JSX.Element => {
         {/* Right-side 'Follow Us' rail */}
         <div className="absolute w-full top-0 left-0 h-[960px]">
           <div className="h-full justify-center gap-5 absolute top-0 right-7 flex flex-col w-14 items-center">
-            <div className="flex w-[216px] items-start -rotate-90">
-             
-            </div>
+            <div className="flex w-[216px] items-start -rotate-90" />
           </div>
         </div>
       </div>
