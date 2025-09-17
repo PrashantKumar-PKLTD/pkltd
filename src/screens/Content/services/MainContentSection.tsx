@@ -520,8 +520,8 @@ export const MainContentSection = (): JSX.Element => {
               <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
               <div className="gap-3 flex flex-col items-start w-full">
                 <div
-                  className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle
 -font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]"
+                  className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]"
                 >
                   AWARDS &amp; HONORS
                 </div>
