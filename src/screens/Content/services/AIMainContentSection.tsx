@@ -154,7 +154,6 @@ export const AIMainContentSection = (): JSX.Element => {
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-center justify-center gap-8 min-h-[480px]">
             <SmoothScrollWrapper animationType="slide" delay={0}>
-            <SmoothScrollWrapper animationType="slide" delay={0}>
               <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-8 pb-0 px-0">
                 <div className="gap-2 flex flex-col items-start w-full">
                   <div className="mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#151517] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] w-fit [font-style:var(--title-h6-font-style)]">
@@ -206,7 +205,6 @@ export const AIMainContentSection = (): JSX.Element => {
                 />
               </div>
             </SmoothScrollWrapper>
-            </SmoothScrollWrapper>
           </div>
         </div>
         <ScrollIndicator targetId="ai-services-section" />
@@ -216,7 +214,6 @@ export const AIMainContentSection = (): JSX.Element => {
       <section id="ai-services-section" className="flex flex-col items-center justify-center px-0 py-24 w-full bg-[#88888914]">
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-start gap-8 w-full">
-            <SmoothScrollWrapper animationType="slide" delay={0}>
             <SmoothScrollWrapper animationType="slide" delay={0}>
               <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
                 <div className="gap-3 flex flex-col items-start w-full">
@@ -261,11 +258,8 @@ export const AIMainContentSection = (): JSX.Element => {
                   </div>
                 </SmoothScrollWrapper>
               ))}
-              </SmoothScrollWrapper>
             </div>
-            </SmoothScrollWrapper>
 
-            <SmoothScrollWrapper animationType="fade" delay={400}>
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(2, 4).map((service, index) => (
                 <SmoothScrollWrapper
@@ -310,11 +304,6 @@ export const AIMainContentSection = (): JSX.Element => {
                 animationType="scale"
                 delay={index * 100}
               >
-              <SmoothScrollWrapper
-                key={index}
-                animationType="scale"
-                delay={index * 100}
-              >
                 <Card className="group w-full h-[187px] bg-[#ffffff] rounded-[20px] border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
                   <CardContent className="flex flex-col items-start justify-between p-[18px] h-full">
                     <div className="w-16 h-[63px] bg-[#9333ea1a] rounded-[10px] flex items-center justify-center group-hover:bg-[#9333ea] transition-colors duration-300">
@@ -330,7 +319,6 @@ export const AIMainContentSection = (): JSX.Element => {
                   </CardContent>
                 </Card>
               </SmoothScrollWrapper>
-              </SmoothScrollWrapper>
             ))}
           </div>
         </div>
@@ -341,7 +329,6 @@ export const AIMainContentSection = (): JSX.Element => {
       <section id="ai-video-section" className="flex flex-col items-center justify-center pt-24 pb-0 px-0 w-full">
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-start gap-8 w-full">
-            <SmoothScrollWrapper animationType="slide" delay={0}>
             <SmoothScrollWrapper animationType="slide" delay={0}>
               <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-0 pb-2 px-0">
                 <div className="gap-3 flex flex-col items-start w-full">
@@ -365,7 +352,6 @@ export const AIMainContentSection = (): JSX.Element => {
 
         <div className="items-center w-full flex flex-col justify-center">
           <div className="flex items-center justify-center w-full">
-            <SmoothScrollWrapper animationType="fade" delay={200}>
             <SmoothScrollWrapper animationType="fade" delay={200}>
               <div className="flex flex-col w-full max-w-[936px] items-start justify-center gap-8 px-0 py-24">
                 <img
@@ -449,7 +435,6 @@ export const AIMainContentSection = (): JSX.Element => {
                 </Accordion>
               </div>
             </SmoothScrollWrapper>
-            </SmoothScrollWrapper>
 
             <div className="w-[184px] bg-[#ffffff]" />
           </div>
@@ -516,7 +501,6 @@ export const AIMainContentSection = (): JSX.Element => {
       <section id="ai-awards-section" className="flex flex-col items-center justify-center px-0 py-24 w-full">
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-start gap-8 w-full">
-            <SmoothScrollWrapper animationType="slide" delay={0}>
             <SmoothScrollWrapper animationType="slide" delay={0}>
               <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
                 <div className="gap-3 flex flex-col items-start w-full">
@@ -609,14 +593,12 @@ export const AIMainContentSection = (): JSX.Element => {
         <div className="w-20" />
         <div className="w-full max-w-[632px]" />
         <SmoothScrollWrapper animationType="slide" delay={0}>
-        <SmoothScrollWrapper animationType="slide" delay={0}>
           <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-0 pb-2 px-0">
             <div className="gap-3 flex flex-col items-start w-full">
               <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                 AI FEATURES
               </div>
 
-              <SmoothScrollWrapper animationType="fade" delay={200}>
               <Separator className="w-full h-px bg-[#8a8a93]" />
 
               <div className="text-[#101014] text-[length:var(--title-h2-font-size)] tracking-[var(--title-h2-letter-spacing)] leading-[var(--title-h2-line-height)] w-full font-title-h2 font-[number:var(--title-h2-font-weight)] [font-style:var(--title-h2-font-style)]">
@@ -632,7 +614,6 @@ export const AIMainContentSection = (): JSX.Element => {
       <section id="ai-cta-section" className="flex flex-col w-full items-center justify-center px-0 py-24 bg-[#101014]">
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-start justify-center gap-8 w-full">
-            <SmoothScrollWrapper animationType="slide" delay={0}>
             <SmoothScrollWrapper animationType="slide" delay={0}>
               <div className="flex flex-col items-start justify-center gap-8 flex-1">
                 <div className="gap-2 flex flex-col items-start w-full">
@@ -673,13 +654,11 @@ export const AIMainContentSection = (): JSX.Element => {
 
           <div className="flex items-center justify-center gap-8 w-full">
             <SmoothScrollWrapper animationType="fade" delay={400}>
-            <SmoothScrollWrapper animationType="fade" delay={400}>
               <div className="flex flex-col items-start justify-center gap-8 flex-1">
                 <div className="w-full mt-[-1.00px] font-body-large font-[number:var(--body-large-font-weight)] text-[#ffffffbf] text-[length:var(--body-large-font-size)] tracking-[var(--body-large-letter-spacing)] leading-[var(--body-large-line-height)] [font-style:var(--body-large-font-style)]">
                   We&apos;re AI specialists who are passionate about creating intelligent solutions that transform businesses and drive innovation through cutting-edge artificial intelligence and machine learning technologies.
                 </div>
               </div>
-            </SmoothScrollWrapper>
             </SmoothScrollWrapper>
 
             <div className="flex-1 h-[50px]" />
