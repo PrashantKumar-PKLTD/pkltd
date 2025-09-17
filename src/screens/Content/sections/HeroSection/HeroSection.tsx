@@ -1,10 +1,11 @@
 import { ArrowRightIcon, PlayIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../../../components/ui/button";
+import { ScrollIndicator } from "../../../../components/ui/scroll-indicator";
 
 export const HeroSection = (): JSX.Element => {
   return (
-    <section className="relative w-full h-[840px] overflow-hidden mt-16">
+    <section id="hero" className="relative w-full h-[840px] overflow-hidden mt-16">
       <div className="relative w-full max-w-[1312px] h-[840px] mx-auto">
         <img
           className="absolute w-[864px] h-[840px] top-0 left-0 object-cover translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]"
@@ -47,6 +48,8 @@ export const HeroSection = (): JSX.Element => {
           </Button>
         </div>
       </div>
+      
+      <ScrollIndicator targetId="map-section" />
     </section>
   );
 };

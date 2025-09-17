@@ -1,6 +1,8 @@
 import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import { ScrollIndicator } from "../../../../components/ui/scroll-indicator";
+import { SmoothScrollWrapper } from "../../../../components/ui/smooth-scroll-wrapper";
 
 export const TeamSection = (): JSX.Element => {
   const teamCards = [
@@ -27,21 +29,24 @@ export const TeamSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="flex-col items-center justify-center self-stretch w-full flex-[0_0_auto] flex relative">
+    <section id="team-section" className="flex-col items-center justify-center self-stretch w-full flex-[0_0_auto] flex relative">
       <div className="items-center justify-center self-stretch w-full flex-[0_0_auto] flex flex-col relative">
         <div className="items-center justify-center self-stretch w-full flex-[0_0_auto] flex relative">
           {teamCards.map((card, index) => (
-            <Card
+            <SmoothScrollWrapper
               key={index}
-              className={`flex flex-col w-[840px] h-[560px] items-start justify-center gap-8 ${card.paddingLeft} ${card.paddingRight} py-24 relative border-0 rounded-none translate-y-[-1rem] animate-fade-in opacity-0`}
-              style={
-                {
-                  background: `url(${card.backgroundImage}) 50% 50% / cover`,
-                  "--animation-delay": card.animationDelay,
-                } as React.CSSProperties
-              }
+              animationType="slide"
+              delay={index * 300}
             >
-              <CardContent className="gap-2 self-stretch w-full flex flex-col items-start relative flex-[0_0_auto] p-0">
+              <Card
+                className={`flex flex-col w-[840px] h-[560px] items-start justify-center gap-8 ${card.paddingLeft} ${card.paddingRight} py-24 relative border-0 rounded-none hover:transform hover:scale-[1.02] transition-all duration-500`}
+                style={
+                  {
+                    background: `url(${card.backgroundImage}) 50% 50% / cover`,
+                  } as React.CSSProperties
+                }
+              >
+                <CardContent className="gap-2 self-stretch w-full flex flex-col items-start relative flex-[0_0_auto] p-0">
                 <div className="text-dark-light-dark-scheme relative w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                   {card.subtitle}
                 </div>
@@ -49,9 +54,9 @@ export const TeamSection = (): JSX.Element => {
                 <div className="relative self-stretch [font-family:'Playfair_Display',Helvetica] font-black text-white text-[52px] tracking-[0] leading-[54.6px] whitespace-pre-line">
                   {card.title}
                 </div>
-              </CardContent>
+                </CardContent>
 
-              <Button className="relative bg-[#4487f2] inline-flex h-11 items-center justify-center gap-2 px-5 py-3 rounded-lg overflow-hidden border-0 hover:bg-[#3a75d9] transition-colors h-auto">
+                <Button className="relative bg-[#4487f2] inline-flex h-11 items-center justify-center gap-2 px-5 py-3 rounded-lg overflow-hidden border-0 hover:bg-[#3a75d9] hover:scale-105 transition-all duration-300 h-auto">
                 <span className="relative w-fit mt-[-3.00px] mb-[-1.00px] font-action-base font-[number:var(--action-base-font-weight)] text-white text-[length:var(--action-base-font-size)] text-center tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] whitespace-nowrap [font-style:var(--action-base-font-style)]">
                   {card.buttonText}
                 </span>
@@ -61,11 +66,14 @@ export const TeamSection = (): JSX.Element => {
                   alt="Arrow"
                   src={card.arrowSrc}
                 />
-              </Button>
-            </Card>
+                </Button>
+              </Card>
+            </SmoothScrollWrapper>
           ))}
         </div>
       </div>
+      
+      <ScrollIndicator targetId="projects-section" />
     </section>
   );
 };

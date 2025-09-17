@@ -1,6 +1,8 @@
 import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import { ScrollIndicator } from "../../../../components/ui/scroll-indicator";
+import { SmoothScrollWrapper } from "../../../../components/ui/smooth-scroll-wrapper";
 
 const mapControls = [
   {
@@ -17,17 +19,18 @@ const mapControls = [
 
 export const AboutUsSection = (): JSX.Element => {
   return (
-    <section className="flex-col w-full items-center justify-center flex-[0_0_auto] flex relative translate-y-[-1rem] animate-fade-in opacity-0">
+    <section id="about-section" className="flex-col w-full items-center justify-center flex-[0_0_auto] flex relative">
       <div className="items-center justify-center self-stretch w-full flex-[0_0_auto] flex flex-col relative">
         <div className="items-center justify-center self-stretch w-full flex-[0_0_auto] flex relative">
-          <div className="flex flex-col w-[840px] items-start justify-center gap-8 relative bg-[#ff5d3a1a]">
+          <SmoothScrollWrapper animationType="slide" delay={0}>
+            <div className="flex flex-col w-[840px] items-start justify-center gap-8 relative bg-[#ff5d3a1a]">
             <div className="relative self-stretch w-full h-[460px] [background:url(https://c.animaapp.com/mflezxv1yE4F7m/img/google-map.png)_50%_50%_/_cover]">
               <div className="inline-flex items-start gap-1 absolute top-5 left-5">
                 {mapControls.map((control, index) => (
                   <Button
                     key={control.label}
                     variant="ghost"
-                    className={`inline-flex h-10 items-center justify-center gap-2.5 px-[11px] py-0 relative flex-[0_0_auto] bg-[#ffffff] rounded shadow-[0px_1px_3px_#00000014] hover:bg-[#ffffff] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${200 + index * 100}ms]`}
+                    className={`inline-flex h-10 items-center justify-center gap-2.5 px-[11px] py-0 relative flex-[0_0_auto] bg-[#ffffff] rounded shadow-[0px_1px_3px_#00000014] hover:bg-[#ffffff] hover:scale-105 transition-all duration-300`}
                   >
                     <div
                       className={`${control.textColor} relative w-fit [font-family:'Roboto',Helvetica] font-medium text-base tracking-[0.16px] leading-7 whitespace-nowrap`}
@@ -38,7 +41,7 @@ export const AboutUsSection = (): JSX.Element => {
                 ))}
               </div>
 
-              <div className="top-[380px] left-[760px] rotate-90 inline-flex h-10 items-center justify-center gap-2.5 px-[11px] py-0 absolute bg-[#ffffff] rounded shadow-[0px_1px_3px_#00000014] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+              <div className="top-[380px] left-[760px] rotate-90 inline-flex h-10 items-center justify-center gap-2.5 px-[11px] py-0 absolute bg-[#ffffff] rounded shadow-[0px_1px_3px_#00000014] hover:scale-105 transition-all duration-300">
                 <img
                   className="relative w-[18px] h-[18px] -rotate-90"
                   alt="Vector"
@@ -54,7 +57,7 @@ export const AboutUsSection = (): JSX.Element => {
 
               <Button
                 variant="ghost"
-                className="top-5 left-[780px] inline-flex h-10 items-center justify-center gap-2.5 px-[11px] py-0 absolute bg-[#ffffff] rounded shadow-[0px_1px_3px_#00000014] hover:bg-[#ffffff] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:500ms]"
+                className="top-5 left-[780px] inline-flex h-10 items-center justify-center gap-2.5 px-[11px] py-0 absolute bg-[#ffffff] rounded shadow-[0px_1px_3px_#00000014] hover:bg-[#ffffff] hover:scale-105 transition-all duration-300"
               >
                 <img
                   className="relative w-[18px] h-[18px]"
@@ -63,11 +66,13 @@ export const AboutUsSection = (): JSX.Element => {
                 />
               </Button>
 
-              <div className="absolute w-9 h-[43px] top-[209px] left-[402px] bg-[url(https://c.animaapp.com/mflezxv1yE4F7m/img/vector-7.svg)] bg-[100%_100%] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]" />
+              <div className="absolute w-9 h-[43px] top-[209px] left-[402px] bg-[url(https://c.animaapp.com/mflezxv1yE4F7m/img/vector-7.svg)] bg-[100%_100%] animate-pulse-slow" />
             </div>
-          </div>
+            </div>
+          </SmoothScrollWrapper>
 
-          <Card className="flex flex-col items-start gap-4 p-12 relative flex-1 self-stretch grow border-0 shadow-none translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:700ms]">
+          <SmoothScrollWrapper animationType="fade" delay={400}>
+            <Card className="flex flex-col items-start gap-4 p-12 relative flex-1 self-stretch grow border-0 shadow-none hover:transform hover:scale-[1.02] transition-all duration-500">
             <CardContent className="p-0 w-full">
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex flex-col items-start self-stretch w-full relative flex-[0_0_auto]">
@@ -103,9 +108,11 @@ export const AboutUsSection = (): JSX.Element => {
                 Monday - Friday <br />6 am to 8 pm EST
               </div>
             </CardContent>
-          </Card>
+            </Card>
+          </SmoothScrollWrapper>
 
-          <Card className="flex flex-col items-start gap-4 p-12 relative flex-1 self-stretch grow bg-[#88888914] border-0 shadow-none translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
+          <SmoothScrollWrapper animationType="fade" delay={600}>
+            <Card className="flex flex-col items-start gap-4 p-12 relative flex-1 self-stretch grow bg-[#88888914] border-0 shadow-none hover:transform hover:scale-[1.02] transition-all duration-500">
             <CardContent className="p-0 w-full">
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex flex-col items-start self-stretch w-full relative flex-[0_0_auto]">
@@ -132,9 +139,12 @@ export const AboutUsSection = (): JSX.Element => {
                 United States
               </address>
             </CardContent>
-          </Card>
+            </Card>
+          </SmoothScrollWrapper>
         </div>
       </div>
+      
+      <ScrollIndicator targetId="contact-section" />
     </section>
   );
 };

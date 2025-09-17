@@ -2,6 +2,8 @@ import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import React, { useState } from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
+import { ScrollIndicator } from "../../../../components/ui/scroll-indicator";
+import { SmoothScrollWrapper } from "../../../../components/ui/smooth-scroll-wrapper";
 
 const testimonials = [
   {
@@ -69,13 +71,14 @@ export const ServicesSection = (): JSX.Element => {
 
   const testimonial = testimonials[currentTestimonial];
   return (
-    <section className="flex-col items-center justify-center self-stretch w-full flex-[0_0_auto] bg-[#88888914] flex relative">
+    <section id="services-section" className="flex-col items-center justify-center self-stretch w-full flex-[0_0_auto] bg-[#88888914] flex relative">
       <div className="items-center justify-center self-stretch w-full flex-[0_0_auto] flex flex-col relative">
         <div className="items-center justify-center self-stretch w-full flex-[0_0_auto] flex relative">
           <div className="flex flex-col items-start gap-10 px-0 py-24 relative flex-1 self-stretch grow">
             <div className="items-start gap-8 px-0 py-24 self-stretch w-full flex-[0_0_auto] bg-[#ffffff] flex relative">
               <div className="flex flex-col items-start gap-10 pl-[184px] pr-0 py-0 relative flex-1 self-stretch grow">
-                <div className="gap-2 self-stretch w-full flex flex-col items-start relative flex-[0_0_auto] translate-y-[-1rem] animate-fade-in opacity-0">
+                <SmoothScrollWrapper animationType="slide" delay={0}>
+                  <div className="gap-2 self-stretch w-full flex flex-col items-start relative flex-[0_0_auto]">
                   <div className="text-[#151517] relative w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                     TESTIMONIALS
                   </div>
@@ -85,9 +88,11 @@ export const ServicesSection = (): JSX.Element => {
                     <br />
                     mutual goals.
                   </h2>
-                </div>
+                  </div>
+                </SmoothScrollWrapper>
 
-                <div className="flex flex-col items-start gap-3 self-stretch w-full relative flex-[0_0_auto] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+                <SmoothScrollWrapper animationType="fade" delay={300}>
+                  <div className="flex flex-col items-start gap-3 self-stretch w-full relative flex-[0_0_auto]">
                   <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
                     <Badge
                       variant="secondary"
@@ -113,7 +118,7 @@ export const ServicesSection = (): JSX.Element => {
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-center relative self-stretch w-full flex-[0_0_auto] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+                  <div className="flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
                     <div className="flex flex-col items-start gap-10 self-stretch w-full relative flex-[0_0_auto]">
                       <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
                         <div className="flex w-24 items-center gap-2 relative">
@@ -133,7 +138,7 @@ export const ServicesSection = (): JSX.Element => {
                             variant="ghost"
                             size="icon"
                             onClick={prevTestimonial}
-                            className="rotate-180 flex w-14 h-14 items-center justify-center gap-1.5 p-3 relative rounded-[30px] h-auto hover:bg-gray-100 transition-colors"
+                            className="rotate-180 flex w-14 h-14 items-center justify-center gap-1.5 p-3 relative rounded-[30px] h-auto hover:bg-gray-100 hover:scale-110 transition-all duration-300"
                           >
                             <ChevronLeftIcon className="w-6 h-6" />
                           </Button>
@@ -142,7 +147,7 @@ export const ServicesSection = (): JSX.Element => {
                             variant="ghost"
                             size="icon"
                             onClick={nextTestimonial}
-                            className="flex w-14 h-14 items-center justify-center gap-1.5 p-3 relative rounded-[30px] h-auto hover:bg-gray-100 transition-colors"
+                            className="flex w-14 h-14 items-center justify-center gap-1.5 p-3 relative rounded-[30px] h-auto hover:bg-gray-100 hover:scale-110 transition-all duration-300"
                           >
                             <ChevronRightIcon className="w-6 h-6" />
                           </Button>
@@ -150,7 +155,8 @@ export const ServicesSection = (): JSX.Element => {
                       </div>
                     </div>
                   </div>
-                </div>
+                  </div>
+                </SmoothScrollWrapper>
               </div>
 
               <div className="relative self-stretch w-[113px]" />
@@ -158,11 +164,13 @@ export const ServicesSection = (): JSX.Element => {
           </div>
 
           <div 
-            className="relative self-stretch w-[712px] bg-cover bg-center bg-no-repeat translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms] transition-all duration-500 ease-in-out" 
+            className="relative self-stretch w-[712px] bg-cover bg-center bg-no-repeat transition-all duration-700 ease-in-out hover:scale-[1.02]" 
             style={{ backgroundImage: `url(${testimonial.image})` }}
           />
         </div>
       </div>
+      
+      <ScrollIndicator targetId="about-section" />
     </section>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Checkbox } from "../../../../components/ui/checkbox";
 import { Input } from "../../../../components/ui/input";
+import { SmoothScrollWrapper } from "../../../../components/ui/smooth-scroll-wrapper";
 
 // Data for locations
 const locations = [
@@ -47,11 +48,12 @@ const footerLinks = [
 
 export const ContactSection = (): JSX.Element => {
   return (
-    <footer className="flex flex-col w-full items-center bg-[#151517]">
+    <footer id="contact-section" className="flex flex-col w-full items-center bg-[#151517]">
       <div className="w-full max-w-[1312px] items-start justify-center px-4 py-20 flex flex-col">
         <div className="items-start gap-8 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {/* Logo and Social Media Section */}
-          <div className="flex flex-col items-start gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
+          <SmoothScrollWrapper animationType="slide" delay={0}>
+            <div className="flex flex-col items-start gap-8">
             <div className="inline-flex flex-col gap-6 px-0 py-px items-start">
               <div className="relative w-[79px] h-10">
                 <div className="h-[41px] bg-[url(https://c.animaapp.com/mflezxv1yE4F7m/img/ohio-theme-.svg)] bg-[100%_100%]">
@@ -69,10 +71,12 @@ export const ContactSection = (): JSX.Element => {
                 Fb.&nbsp;&nbsp;/&nbsp;&nbsp;Ig.&nbsp;&nbsp;/&nbsp;&nbsp;Tw.&nbsp;&nbsp;/&nbsp;&nbsp;Be.
               </div>
             </div>
-          </div>
+            </div>
+          </SmoothScrollWrapper>
 
           {/* Locations Section */}
-          <div className="flex flex-col items-start gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+          <SmoothScrollWrapper animationType="slide" delay={200}>
+            <div className="flex flex-col items-start gap-8">
             {locations.map((location, index) => (
               <div
                 key={location.title}
@@ -101,10 +105,12 @@ export const ContactSection = (): JSX.Element => {
                 </div>
               </div>
             ))}
-          </div>
+            </div>
+          </SmoothScrollWrapper>
 
           {/* Contact Sections */}
-          <div className="flex flex-col items-start gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+          <SmoothScrollWrapper animationType="slide" delay={400}>
+            <div className="flex flex-col items-start gap-8">
             {contactSections.map((section, index) => (
               <div
                 key={section.title}
@@ -135,10 +141,12 @@ export const ContactSection = (): JSX.Element => {
                 </div>
               </div>
             ))}
-          </div>
+            </div>
+          </SmoothScrollWrapper>
 
           {/* Newsletter Section */}
-          <div className="flex flex-col items-start gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
+          <SmoothScrollWrapper animationType="slide" delay={600}>
+            <div className="flex flex-col items-start gap-8">
             <div className="flex flex-col gap-6 w-full items-start">
               <div className="flex gap-2.5 w-full items-start">
                 <div className="flex-1 text-[#ffffffbf] relative mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] [font-style:var(--title-h6-font-style)]">
@@ -152,12 +160,12 @@ export const ContactSection = (): JSX.Element => {
                     <div className="flex w-full h-11 items-center px-4 py-0 bg-[#88888914] rounded-lg">
                       <Input
                         placeholder="Enter your email"
-                        className="flex-1 h-6 bg-transparent border-none p-0 font-body-base font-[number:var(--body-base-font-weight)] text-[#646466] text-[length:var(--body-base-font-size)] tracking-[var(--body-base-letter-spacing)] leading-[var(--body-base-line-height)] [font-style:var(--body-base-font-style)] placeholder:text-[#646466] focus-visible:ring-0 focus-visible:ring-offset-0"
+                        className="flex-1 h-6 bg-transparent border-none p-0 font-body-base font-[number:var(--body-base-font-weight)] text-[#646466] text-[length:var(--body-base-font-size)] tracking-[var(--body-base-letter-spacing)] leading-[var(--body-base-line-height)] [font-style:var(--body-base-font-style)] placeholder:text-[#646466] focus-visible:ring-0 focus-visible:ring-offset-0 transition-all duration-300"
                       />
                     </div>
 
                     <div className="absolute top-0 right-0 inline-flex h-11 items-center justify-center gap-2 px-5 py-3 rounded-lg overflow-hidden">
-                      <Button className="relative w-fit mt-[-4.00px] font-action-base font-[number:var(--action-base-font-weight)] text-[#ffffff] text-[length:var(--action-base-font-size)] text-center tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] [font-style:var(--action-base-font-style)] bg-transparent hover:bg-transparent p-0 h-auto">
+                      <Button className="relative w-fit mt-[-4.00px] font-action-base font-[number:var(--action-base-font-weight)] text-[#ffffff] text-[length:var(--action-base-font-size)] text-center tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] [font-style:var(--action-base-font-style)] bg-transparent hover:bg-transparent hover:scale-105 transition-all duration-300 p-0 h-auto">
                         Sign Up
                       </Button>
                     </div>
@@ -182,14 +190,16 @@ export const ContactSection = (): JSX.Element => {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
+          </SmoothScrollWrapper>
         </div>
       </div>
 
       <div className="w-full max-w-[1312px] items-start justify-center flex flex-col px-4">
         <div className="relative w-full h-px bg-[#90919c29]" />
 
-        <div className="items-start gap-8 px-0 py-[30px] w-full flex flex-col md:flex-row translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
+        <SmoothScrollWrapper animationType="fade" delay={800}>
+          <div className="items-start gap-8 px-0 py-[30px] w-full flex flex-col md:flex-row">
           <div className="flex flex-col items-start justify-center gap-8 flex-1">
             <div className="inline-flex items-center justify-center gap-1">
               <div className="inline-flex items-center">
@@ -224,7 +234,8 @@ export const ContactSection = (): JSX.Element => {
               ))}
             </div>
           </div>
-        </div>
+          </div>
+        </SmoothScrollWrapper>
       </div>
     </footer>
   );

@@ -6,6 +6,8 @@ import {
   AccordionTrigger,
 } from "../../../../components/ui/accordion";
 import { Badge } from "../../../../components/ui/badge";
+import { ScrollIndicator } from "../../../../components/ui/scroll-indicator";
+import { SmoothScrollWrapper } from "../../../../components/ui/smooth-scroll-wrapper";
 
 const faqData = [
   {
@@ -31,10 +33,11 @@ const faqData = [
 
 export const CallToActionSection = (): JSX.Element => {
   return (
-    <section className="flex-col w-full items-center justify-center px-0 py-24 flex-[0_0_auto] flex relative">
+    <section id="cta-section" className="flex-col w-full items-center justify-center px-0 py-24 flex-[0_0_auto] flex relative">
       <div className="w-full max-w-[1312px] items-start justify-end flex-[0_0_auto] flex flex-col relative">
         <div className="items-center gap-8 self-stretch w-full flex-[0_0_auto] flex relative">
-          <div className="flex flex-col w-[528px] items-start justify-center gap-8 relative self-stretch translate-y-[-1rem] animate-fade-in opacity-0">
+          <SmoothScrollWrapper animationType="slide" delay={0}>
+            <div className="flex flex-col w-[528px] items-start justify-center gap-8 relative self-stretch">
             <div className="gap-2 self-stretch w-full flex flex-col items-start relative flex-[0_0_auto]">
               <div className="text-[#151517] relative w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                 APPROACH
@@ -49,7 +52,7 @@ export const CallToActionSection = (): JSX.Element => {
               </h2>
             </div>
 
-            <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+            <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
               <div className="items-center justify-between pl-0 pr-8 py-0 flex relative self-stretch w-full flex-[0_0_auto]">
                 <div className="relative w-[331px] h-5 font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#101014] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] whitespace-nowrap [font-style:var(--title-h6-font-style)]">
                   Structured Media Insights
@@ -77,11 +80,13 @@ export const CallToActionSection = (): JSX.Element => {
                 <div className="w-[478px] h-1 rounded-sm bg-[linear-gradient(90deg,rgba(68,135,242,1)_0%,rgba(117,68,221,1)_100%)]" />
               </div>
             </div>
-          </div>
+            </div>
+          </SmoothScrollWrapper>
 
           <div className="relative self-stretch w-[304px]" />
 
-          <div className="flex flex-col items-start justify-center gap-8 relative flex-1 self-stretch grow translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+          <SmoothScrollWrapper animationType="fade" delay={400}>
+            <div className="flex flex-col items-start justify-center gap-8 relative flex-1 self-stretch grow">
             <Accordion
               type="single"
               collapsible
@@ -109,9 +114,12 @@ export const CallToActionSection = (): JSX.Element => {
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
+            </div>
+          </SmoothScrollWrapper>
         </div>
       </div>
+      
+      <ScrollIndicator targetId="team-section" />
     </section>
   );
 };

@@ -1,5 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
+import { ScrollIndicator } from "../../../../components/ui/scroll-indicator";
+import { SmoothScrollWrapper } from "../../../../components/ui/smooth-scroll-wrapper";
 
 export const ProjectsSection = (): JSX.Element => {
   const statsData = [
@@ -27,20 +29,17 @@ export const ProjectsSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="flex flex-col w-full items-center justify-center px-0 py-24 relative">
+    <section id="projects-section" className="flex flex-col w-full items-center justify-center px-0 py-24 relative">
       <div className="w-full max-w-[1312px] items-center justify-center flex flex-col relative">
         <div className="items-center justify-center gap-8 w-full flex relative">
           {statsData.map((stat, index) => (
-            <Card
+            <SmoothScrollWrapper
               key={index}
-              className="flex-col w-[304px] items-start gap-5 self-stretch flex relative bg-transparent border-none shadow-none translate-y-[-1rem] animate-fade-in opacity-0"
-              style={
-                {
-                  "--animation-delay": `${index * 200}ms`,
-                } as React.CSSProperties
-              }
+              animationType="scale"
+              delay={index * 200}
             >
-              <CardContent className="p-0 w-full">
+              <Card className="flex-col w-[304px] items-start gap-5 self-stretch flex relative bg-transparent border-none shadow-none hover:transform hover:scale-105 transition-all duration-300">
+                <CardContent className="p-0 w-full">
                 <div className="flex flex-col w-40 items-start gap-2 relative flex-[0_0_auto]">
                   <div className="inline-flex items-center gap-2 relative flex-[0_0_auto]">
                     <div className="w-8 h-8 flex items-center justify-center gap-1.5 relative">
@@ -70,13 +69,16 @@ export const ProjectsSection = (): JSX.Element => {
                 <div className="relative self-stretch font-body-base font-[number:var(--body-base-font-weight)] text-[#151517] text-[length:var(--body-base-font-size)] tracking-[var(--body-base-letter-spacing)] leading-[var(--body-base-line-height)] [font-style:var(--body-base-font-style)] mt-5">
                   {stat.description}
                 </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </SmoothScrollWrapper>
           ))}
 
           <div className="relative flex-1 self-stretch grow" />
         </div>
       </div>
+      
+      <ScrollIndicator targetId="services-section" />
     </section>
   );
 };

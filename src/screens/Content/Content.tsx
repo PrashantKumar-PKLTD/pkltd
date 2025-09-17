@@ -13,6 +13,7 @@ import { TestimonialsSection } from "./sections/TestimonialsSection/Testimonials
 
 import Header from "../../components/Header";
 import AnimatedTextRows from "./sections/AnimatedRowSection/AnimatedTextRows";
+import { SmoothScrollWrapper } from "../../components/ui/smooth-scroll-wrapper";
 
 const companyLogos = [
   {
@@ -155,19 +156,19 @@ export const Content = (): JSX.Element => {
       data-model-id="4019:47478"
     >
       <Header/>
-      <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms] w-full">
+      <div className="w-full">
         <HeroSection />
       </div>
 
-      <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms] w-full">
+      <div className="w-full">
         <MapSection />
       </div>
 
-      <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms] w-full">
+      <div className="w-full">
         <TeamSection />
       </div>
 
-      <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms] w-full">
+      <div className="w-full">
         <CallToActionSection />
       </div>
 
@@ -175,12 +176,13 @@ export const Content = (): JSX.Element => {
 
 
       <section className="flex items-end justify-around gap-[152px] w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:800ms]">
-        <div className="w-full max-w-[1680px] items-end justify-between flex">
+        <SmoothScrollWrapper animationType="scale" delay={0}>
+          <div className="w-full max-w-[1680px] items-end justify-between flex">
           <div className="flex flex-col w-[936px] items-center justify-center gap-2.5 px-[425px] py-[246px] [background:url(https://c.animaapp.com/mflezxv1yE4F7m/img/col-2.png)_50%_50%_/_cover]">
             <div className="flex w-[81.72px] h-[66.81px] items-center gap-3">
               <Button
                 size="icon"
-                className="w-16 h-16 bg-[#151517] rounded-[50px] shadow-outline-shadow-animation hover:bg-[#252527] transition-colors"
+                className="w-16 h-16 bg-[#151517] rounded-[50px] shadow-outline-shadow-animation hover:bg-[#252527] hover:scale-110 transition-all duration-300"
               >
                 <img
                   className="w-7 h-7"
@@ -202,14 +204,16 @@ export const Content = (): JSX.Element => {
           </div>
 
           <div className="w-[184px]" />
-        </div>
+          </div>
+        </SmoothScrollWrapper>
       </section>
 
-      <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1000ms] w-full">
+      <div className="w-full">
         <ProjectsSection />
       </div>
 
-      <section className="flex flex-col items-center justify-center px-0 py-24 w-full bg-[#88888914] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1200ms]">
+      <SmoothScrollWrapper animationType="fade" delay={0}>
+        <section className="flex flex-col items-center justify-center px-0 py-24 w-full bg-[#88888914]">
         <div className="w-full max-w-[1312px] items-center justify-center flex flex-col">
           <div className="flex items-start gap-8 w-full">
             {Array.from({ length: 6 }, (_, colIndex) => (
@@ -256,27 +260,29 @@ export const Content = (): JSX.Element => {
             ))}
           </div>
         </div>
-      </section>
+        </section>
+      </SmoothScrollWrapper>
 
 
-    <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1400ms] w-full">
+      <div className="w-full">
         <AnimatedTextRows />
-    </div>
+      </div>
 
-      <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1400ms] w-full">
+      <div className="w-full">
         <ServicesSection />
       </div>
 
-      <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1600ms] w-full">
+      <div className="w-full">
         <TestimonialsSection />
       </div>
 
-      <section className="flex flex-col w-full h-[600px] items-center justify-center [background:url(https://c.animaapp.com/mflezxv1yE4F7m/img/section.png)_50%_50%_/_cover] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:1800ms]">
+      <SmoothScrollWrapper animationType="scale" delay={0}>
+        <section className="flex flex-col w-full h-[600px] items-center justify-center [background:url(https://c.animaapp.com/mflezxv1yE4F7m/img/section.png)_50%_50%_/_cover]">
         <div className="items-center justify-center flex-1 w-full bg-x-color-black-50 flex flex-col">
           <div className="flex w-[81.72px] h-[66.81px] items-center gap-3">
             <Button
               size="icon"
-              className="w-16 h-16 bg-[#151517] rounded-[50px] shadow-outline-shadow-animation hover:bg-[#252527] transition-colors"
+              className="w-16 h-16 bg-[#151517] rounded-[50px] shadow-outline-shadow-animation hover:bg-[#252527] hover:scale-110 transition-all duration-300"
             >
               <img
                 className="w-7 h-7"
@@ -286,17 +292,18 @@ export const Content = (): JSX.Element => {
             </Button>
           </div>
         </div>
-      </section>
+        </section>
+      </SmoothScrollWrapper>
 
-      <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:2000ms] w-full">
+      <div className="w-full">
         <AboutUsSection />
       </div>
 
-      <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:2200ms] w-full">
+      <div className="w-full">
         <NewsSection />
       </div>
 
-      <div className="translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:2400ms] w-full">
+      <div className="w-full">
         <ContactSection />
       </div>
     </main>

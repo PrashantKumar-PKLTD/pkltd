@@ -7,6 +7,8 @@ import {
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import { ScrollIndicator } from "../../../../components/ui/scroll-indicator";
+import { SmoothScrollWrapper } from "../../../../components/ui/smooth-scroll-wrapper";
 
 const newsArticles = [
   {
@@ -52,11 +54,12 @@ const newsArticles = [
 
 export const TestimonialsSection = (): JSX.Element => {
   return (
-    <section className="flex-col items-center justify-center px-0 py-24 self-stretch w-full flex-[0_0_auto] bg-[#88888914] flex relative">
+    <section id="testimonials-section" className="flex-col items-center justify-center px-0 py-24 self-stretch w-full flex-[0_0_auto] bg-[#88888914] flex relative">
       <div className="w-full max-w-[1312px] items-center flex-[0_0_auto] flex flex-col relative">
-        <header className="items-center justify-center gap-8 pt-0 pb-8 px-0 self-stretch w-full flex-[0_0_auto] flex relative">
+        <SmoothScrollWrapper animationType="slide" delay={0}>
+          <header className="items-center justify-center gap-8 pt-0 pb-8 px-0 self-stretch w-full flex-[0_0_auto] flex relative">
           <div className="flex flex-col items-start justify-center gap-8 relative flex-1 grow">
-            <div className="w-full max-w-[400px] gap-2 flex flex-col items-start relative flex-[0_0_auto] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:0ms]">
+            <div className="w-full max-w-[400px] gap-2 flex flex-col items-start relative flex-[0_0_auto]">
               <div className="text-[#151517] relative w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                 NON-PROFIT INITIATIVE
               </div>
@@ -68,16 +71,18 @@ export const TestimonialsSection = (): JSX.Element => {
           </div>
 
           <div className="relative flex-1 self-stretch grow" />
-        </header>
+          </header>
+        </SmoothScrollWrapper>
 
         <div className="items-center justify-center gap-8 self-stretch w-full flex-[0_0_auto] flex relative">
           {newsArticles.map((article, index) => (
-            <Card
+            <SmoothScrollWrapper
               key={article.id}
-              className="flex flex-col w-[416px] h-[416px] items-start relative rounded-lg overflow-hidden translate-y-[-1rem] animate-fade-in opacity-0"
-              style={{ "--animation-delay": `${200 + index * 200}ms` }}
+              animationType="scale"
+              delay={200 + index * 200}
             >
-              <CardContent className="flex flex-col items-center justify-between relative flex-1 self-stretch w-full grow bg-[#88888914] p-0">
+              <Card className="flex flex-col w-[416px] h-[416px] items-start relative rounded-lg overflow-hidden hover:transform hover:scale-105 hover:shadow-xl transition-all duration-500">
+                <CardContent className="flex flex-col items-center justify-between relative flex-1 self-stretch w-full grow bg-[#88888914] p-0">
                 <div className="justify-between flex items-center p-7 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex items-center gap-[15px] relative flex-[0_0_auto]">
                     <Avatar className="w-14 h-14">
@@ -110,7 +115,7 @@ export const TestimonialsSection = (): JSX.Element => {
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="rotate-180 flex w-14 h-14 items-center justify-center gap-1.5 p-3 relative rounded-[30px] h-auto"
+                      className="rotate-180 flex w-14 h-14 items-center justify-center gap-1.5 p-3 relative rounded-[30px] h-auto hover:bg-gray-100 hover:scale-110 transition-all duration-300"
                     >
                       <img
                         className="-rotate-180 relative w-6 h-6"
@@ -122,7 +127,7 @@ export const TestimonialsSection = (): JSX.Element => {
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="flex w-14 h-14 items-center justify-center gap-1.5 p-3 relative rounded-[30px] h-auto"
+                      className="flex w-14 h-14 items-center justify-center gap-1.5 p-3 relative rounded-[30px] h-auto hover:bg-gray-100 hover:scale-110 transition-all duration-300"
                     >
                       <img
                         className="relative w-6 h-6"
@@ -170,11 +175,14 @@ export const TestimonialsSection = (): JSX.Element => {
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </SmoothScrollWrapper>
           ))}
         </div>
       </div>
+      
+      <ScrollIndicator targetId="news-section" />
     </section>
   );
 };
