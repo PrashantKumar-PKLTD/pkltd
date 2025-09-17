@@ -152,6 +152,7 @@ export const TechMainContentSection = (): JSX.Element => {
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-center justify-center gap-8 min-h-[480px]">
             <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-8 pb-0 px-0 translate-y-[-1rem] animate-fade-in opacity-0">
+            <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 pt-8 pb-0 px-0">
               <div className="gap-2 flex flex-col items-start w-full">
                 <div className="mt-[-1.00px] font-title-h6 font-[number:var(--title-h6-font-weight)] text-[#151517] text-[length:var(--title-h6-font-size)] tracking-[var(--title-h6-letter-spacing)] leading-[var(--title-h6-line-height)] w-fit [font-style:var(--title-h6-font-style)]">
                   Building the future with <br />
@@ -178,6 +179,7 @@ export const TechMainContentSection = (): JSX.Element => {
                   Start Tech Project
                 </QuoteButton>
               </div>
+            </div>
             </div>
 
             <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
@@ -206,6 +208,7 @@ export const TechMainContentSection = (): JSX.Element => {
         <div className="w-full max-w-[1312px] mx-auto px-4">
           <div className="flex items-start gap-8 w-full">
             <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
+            <div className="flex flex-col w-full max-w-[528px] items-start justify-center gap-8">
               <div className="gap-3 flex flex-col items-start w-full">
                 <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
                   TECHNOLOGY SERVICES
@@ -218,14 +221,15 @@ export const TechMainContentSection = (): JSX.Element => {
                 </div>
               </div>
             </div>
+            </div>
 
             <div className="w-20" />
 
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(0, 2).map((service, index) => (
                 <div
-                  key={index}
-                  className={`flex flex-col items-start gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${800 + index * 200}ms]`}
+                  key={index} 
+                  className="flex flex-col items-start gap-4 w-full"
                 >
                   <div className="gap-3 flex flex-col items-start w-full">
                     <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
@@ -249,8 +253,8 @@ export const TechMainContentSection = (): JSX.Element => {
             <div className="flex flex-col items-start justify-center gap-[50px] flex-1">
               {servicesData.slice(2, 4).map((service, index) => (
                 <div
-                  key={index + 2}
-                  className={`flex flex-col items-start gap-4 w-full translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${1200 + index * 200}ms]`}
+                  key={index + 2} 
+                  className="flex flex-col items-start gap-4 w-full"
                 >
                   <div className="gap-3 flex flex-col items-start w-full">
                     <div className="w-fit mt-[-1.00px] font-title-subtitle font-[number:var(--title-subtitle-font-weight)] text-[#151517] text-[length:var(--title-subtitle-font-size)] tracking-[var(--title-subtitle-letter-spacing)] leading-[var(--title-subtitle-line-height)] whitespace-nowrap [font-style:var(--title-subtitle-font-style)]">
@@ -282,8 +286,8 @@ export const TechMainContentSection = (): JSX.Element => {
           <div className="grid grid-cols-3 gap-8 w-full">
             {capabilitiesData.map((capability, index) => (
               <Card
-                key={index}
-                className={`group w-full h-[187px] bg-[#ffffff] rounded-[20px] border-0 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:${1600 + index * 100}ms] hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer`}
+                key={index} 
+                className="group w-full h-[187px] bg-[#ffffff] rounded-[20px] border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
               >
                 <CardContent className="flex flex-col items-start justify-between p-[18px] h-full">
                   <div className="w-16 h-[63px] bg-[#22c55e1a] rounded-[10px] flex items-center justify-center group-hover:bg-[#22c55e] transition-colors duration-300">
