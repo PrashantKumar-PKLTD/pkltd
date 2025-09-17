@@ -182,6 +182,7 @@ export const DigitalMainContentSection = (): JSX.Element => {
                     </QuoteButton>
                   </div>
                 </SmoothScrollWrapper>
+            </div>
 
             <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative">
                 <div className="flex flex-col items-start gap-2 w-full z-10">

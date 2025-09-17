@@ -146,10 +146,6 @@ const awardsData = [
   ],
 ];
 
-const SmoothScrollWrapper = ({ children, animationType, delay }: { children: React.ReactNode; animationType: string; delay: number }) => {
-  return <div>{children}</div>;
-};
-
 export const AIMainContentSection = (): JSX.Element => {
   return (
     <div className="flex flex-col items-center w-full">
