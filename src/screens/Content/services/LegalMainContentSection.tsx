@@ -181,6 +181,7 @@ export const LegalMainContentSection = (): JSX.Element => {
             </div>
 
             <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+            <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative">
               <div className="flex flex-col items-start gap-2 w-full z-10">
                 <div className="w-fit mt-[-1.00px] font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
                   Featured legal project:
