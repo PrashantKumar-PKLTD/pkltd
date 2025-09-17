@@ -164,25 +164,24 @@ export const LegalMainContentSection = (): JSX.Element => {
               </div>
 
               <div className="flex items-center gap-4 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-                <div className="flex items-center gap-4">
-                  <Button
-                    variant="ghost"
-                    className="h-auto inline-flex items-center justify-center gap-2 rounded-lg p-0 hover:scale-105 transition-transform duration-200"
-                  >
-                    <div className="font-action-base font-[number:var(--action-base-font-weight)] text-[#151517] text-[length:var(--action-base-font-size)] tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] [font-style:var(--action-base-font-style)]">
-                      Explore Legal Solutions
-                    </div>
-                    <ArrowRightIcon className="w-6 h-6 transition-transform duration-200 group-hover:translate-x-1" />
-                  </Button>
-                  
-                  <QuoteButton variant="primary" size="default">
-                    Start Legal Project
-                  </QuoteButton>
-                </div>
+                <Button
+                  variant="ghost"
+                  className="h-auto inline-flex items-center justify-center gap-2 rounded-lg p-0 hover:scale-105 transition-transform duration-200"
+                >
+                  <div className="font-action-base font-[number:var(--action-base-font-weight)] text-[#151517] text-[length:var(--action-base-font-size)] tracking-[var(--action-base-letter-spacing)] leading-[var(--action-base-line-height)] [font-style:var(--action-base-font-style)]">
+                    Explore Legal Solutions
+                  </div>
+                  <ArrowRightIcon className="w-6 h-6 transition-transform duration-200 group-hover:translate-x-1" />
+                </Button>
+                
+                <QuoteButton variant="primary" size="default">
+                  Start Legal Project
+                </QuoteButton>
               </div>
             </div>
 
             <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+            <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative">
               <div className="flex flex-col items-start gap-2 w-full z-10">
                 <div className="w-fit mt-[-1.00px] font-body-small font-[number:var(--body-small-font-weight)] text-[#151517] text-[length:var(--body-small-font-size)] tracking-[var(--body-small-letter-spacing)] leading-[var(--body-small-line-height)] whitespace-nowrap [font-style:var(--body-small-font-style)]">
                   Featured legal project:
@@ -198,6 +197,7 @@ export const LegalMainContentSection = (): JSX.Element => {
                 alt="Legal Technology"
                 src="https://c.animaapp.com/mfo404djpVGKfZ/img/technology.png"
               />
+            </div>
             </div>
           </div>
         </div>

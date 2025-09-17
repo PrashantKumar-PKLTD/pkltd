@@ -145,6 +145,10 @@ const awardsData = [
   ],
 ];
 
+const SmoothScrollWrapper = ({ children, animationType, delay }: { children: React.ReactNode; animationType: string; delay: number }) => {
+  return <div>{children}</div>;
+};
+
 export const AIMainContentSection = (): JSX.Element => {
   return (
     <div className="flex flex-col items-center w-full">
@@ -179,7 +183,8 @@ export const AIMainContentSection = (): JSX.Element => {
                     <QuoteButton variant="primary" size="default">
                       Start AI Journey
                     </QuoteButton>
-              </div>
+                  </div>
+                </SmoothScrollWrapper>
             </div>
 
             <div className="flex flex-col items-start justify-end pt-0 pb-[80px] px-0 flex-1 relative">
@@ -405,7 +410,7 @@ export const AIMainContentSection = (): JSX.Element => {
                     </AccordionTrigger>
                   </AccordionItem>
                 </Accordion>
-              </div>
+            </div>
 
             <div className="w-[184px] bg-[#ffffff]" />
           </div>
@@ -596,8 +601,8 @@ export const AIMainContentSection = (): JSX.Element => {
                     <br />
                     Let&apos;s innovate together.
                   </div>
+                </div>
             </div>
-            </SmoothScrollWrapper>
             <div className="flex flex-col items-end gap-8 pt-[42px] pb-0 px-0 flex-1">
               <div className="flex items-center gap-4">
                   <QuoteButton variant="primary" size="lg">
@@ -610,8 +615,8 @@ export const AIMainContentSection = (): JSX.Element => {
                     </div>
                     <ArrowRightIcon className="mt-[-2.00px] mb-[-2.00px] w-6 h-6" />
                   </Button>
-                </div>
               </div>
+            </div>
           </div>
 
           <div className="flex items-center justify-center gap-8 px-0 py-7 w-full">
@@ -623,7 +628,7 @@ export const AIMainContentSection = (): JSX.Element => {
                 <div className="w-full mt-[-1.00px] font-body-large font-[number:var(--body-large-font-weight)] text-[#ffffffbf] text-[length:var(--body-large-font-size)] tracking-[var(--body-large-letter-spacing)] leading-[var(--body-large-line-height)] [font-style:var(--body-large-font-style)]">
                   We&apos;re AI specialists who are passionate about creating intelligent solutions that transform businesses and drive innovation through cutting-edge artificial intelligence and machine learning technologies.
                 </div>
-              </div>
+            </div>
 
             <div className="flex-1 h-[50px]" />
           </div>
