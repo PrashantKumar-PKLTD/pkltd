@@ -1,9 +1,9 @@
 import React from "react";
 import { FloatingCTA } from "../../../components/ui/floating-cta";
 import { ContactFooterSection } from "./ContactFooterSection";
-import { SustainabilityMainContentSection } from "./SustainabilityMainContentSection";
+import { SustainabilityMainContentSection } from "./SustainabilityMainContentSection.tsx";
 import { ProjectCallToActionSection } from "./ProjectCallToActionSection";
-import SustainabilityHero from "./SustainabilityHero";
+import SustainabilityHero from "./SustainabilityHero.tsx";
 
 export const Home = (): JSX.Element => {
   return (

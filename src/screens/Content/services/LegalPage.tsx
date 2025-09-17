@@ -3,7 +3,7 @@ import { FloatingCTA } from "../../../components/ui/floating-cta";
 import { ContactFooterSection } from "./ContactFooterSection";
 import { LegalMainContentSection } from "./LegalMainContentSection";
 import { ProjectCallToActionSection } from "./ProjectCallToActionSection";
-import LegalHero from "./LegalHero";
+import LegalHero from "./LegalHero.tsx";
 
 export const Home = (): JSX.Element => {
   return (

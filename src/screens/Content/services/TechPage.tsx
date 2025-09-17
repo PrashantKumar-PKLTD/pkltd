@@ -1,9 +1,9 @@
 import React from "react";
 import { FloatingCTA } from "../../../components/ui/floating-cta";
 import { ContactFooterSection } from "./ContactFooterSection";
-import { TechMainContentSection } from "./TechMainContentSection";
+import { TechMainContentSection } from "./TechMainContentSection.tsx";
 import { ProjectCallToActionSection } from "./ProjectCallToActionSection";
-import TechHero from "./TechHero";
+import TechHero from "./TechHero.tsx";
 
 export const Home = (): JSX.Element => {
   return (

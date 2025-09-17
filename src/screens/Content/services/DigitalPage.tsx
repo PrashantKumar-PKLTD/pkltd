@@ -1,9 +1,9 @@
 import React from "react";
 import { FloatingCTA } from "../../../components/ui/floating-cta";
 import { ContactFooterSection } from "./ContactFooterSection";
-import { DigitalMainContentSection } from "./DigitalMainContentSection";
+import { DigitalMainContentSection } from "./DigitalMainContentSection.tsx";
 import { ProjectCallToActionSection } from "./ProjectCallToActionSection";
-import DigitalHero from "./DigitalHero";
+import DigitalHero from "./DigitalHero.tsx";
 
 export const Home = (): JSX.Element => {
   return (

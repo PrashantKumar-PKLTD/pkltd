@@ -1,9 +1,9 @@
 import React from "react";
 import { FloatingCTA } from "../../../components/ui/floating-cta";
 import { ContactFooterSection } from "./ContactFooterSection";
-import { AgileMainContentSection } from "./AgileMainContentSection";
+import { AgileMainContentSection } from "./AgileMainContentSection.tsx";
 import { ProjectCallToActionSection } from "./ProjectCallToActionSection";
-import AgileHero from "./AgileHero";
+import AgileHero from "./AgileHero.tsx";
 
 export const Home = (): JSX.Element => {
   return (
